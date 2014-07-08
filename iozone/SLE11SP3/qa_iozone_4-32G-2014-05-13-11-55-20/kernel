@@ -1,0 +1,20 @@
+Name        : kernel-default-base          Relocations: (not relocatable)
+Version     : 3.0.76                            Vendor: SUSE LINUX Products GmbH, Nuernberg, Germany
+Release     : 0.11.1                        Build Date: Fri 14 Jun 2013 01:00:56 PM CEST
+Install Date: Tue 13 May 2014 10:03:22 AM CEST      Build Host: nono
+Group       : System/Kernel                 Source RPM: kernel-default-3.0.76-0.11.1.nosrc.rpm
+Size        : 23781786                         License: GPL v2 only
+Signature   : RSA/8, Fri 14 Jun 2013 01:08:35 PM CEST, Key ID e3a5c360307e3d54
+Packager    : http://bugs.opensuse.org
+URL         : http://www.kernel.org/
+Summary     : The Standard Kernel - base modules
+Description :
+The standard kernel for both uniprocessor and multiprocessor systems.
+
+This package contains only the base modules, required in all installs.
+
+
+Source Timestamp: 2013-06-14 10:21:43 +0200
+GIT Revision: ccab9909db1e966cc92984736d4366ba4d1249a5
+GIT Branch: SLE11-SP3-GMC-respin
+Distribution: SUSE Linux Enterprise 11

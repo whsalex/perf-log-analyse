@@ -1,5 +1,5 @@
 import sys
-from collections import OrderedDict
+from collections import OrderedDict, Set
 import logging
 
 __all__ = ['NamedTree', 'NamedTreeGroup', 'OP_KIND_LEAF', 'OP_KIND_DIR']
@@ -19,16 +19,16 @@ def _get_key_set(t_list):
     return key_uset, key_iset, key_dset
 
 (CHK_OK, CHK_NO_ITEM, CHK_NOT_DICT) = list(range(0,3))
-def _check_key(k, t_list, info, error):
+def _check_key(k, t_list, i_list, error):
     iter_t = iter(t_list)
-    iter_i = iter(info)
+    iter_i = iter(i_list)
     _list = []
     while True:
         try:
             t = next(iter_t)
-            info = next(iter_i)
+            i = next(iter_i)
             if k not in t:
-                _list.append(info)
+                _list.append(i)
         except StopIteration:
             break
 
@@ -39,16 +39,16 @@ def _check_key(k, t_list, info, error):
         error[0], error[1] = (CHK_NO_ITEM, _list)
         return False
 
-def _check_dir(k, t_list, info, error):
+def _check_dir(k, t_list, i_list, error):
     iter_t = iter(t_list)
-    iter_i = iter(info)
+    iter_i = iter(i_list)
     _list = []
     while True:
         try:
             t = next(iter_t)
-            info = next(iter_i)
+            i = next(iter_i)
             if not isinstance(t[k], dict):
-                _list.append(info)
+                _list.append(i)
         except StopIteration:
             break
 
@@ -59,16 +59,16 @@ def _check_dir(k, t_list, info, error):
         error[0], error[1] = (CHK_NOT_DICT, _list)
         return False
 
-def _check_file(k, t_list, info, error):
+def _check_file(k, t_list, i_list, error):
     iter_t = iter(t_list)
-    iter_i = iter(info)
+    iter_i = iter(i_list)
     _list = []
     while True:
         try:
             t = next(iter_t)
-            info = next(iter_i)
+            i = next(iter_i)
             if isinstance(t[k], dict):
-                _list.append(info)
+                _list.append(i)
         except StopIteration:
             break
 
@@ -79,11 +79,9 @@ def _check_file(k, t_list, info, error):
         error[0], error[1] = (CHK_NOT_DICT, _list)
         return False
 
-
-
-def named_tree_get_common(t_list, info):
+def named_tree_get_common(t_list, i_list):
     ''' Get the common structure of a list of named_tree
-    info should be iteratable and each one is for each tree
+    i_info should be iteratable and each one is for each tree
     each info should have the name property for debug'''
     stack = []
     path = []
@@ -108,10 +106,10 @@ def named_tree_get_common(t_list, info):
                 (t_list, t_spec, iter_iset) = si
                 path.pop()
         else:
-            if _check_dir(k, t_list, info, error):
+            if _check_dir(k, t_list, i_list, error):
                 si = (t_list, t_spec, iter_iset)
                 stack.append(si)
-                path.append(k)
+                path.append(str(k))
                 t_list = list(map(lambda d:d[k], t_list))
                 key_uset, key_iset, key_dset = _get_key_set(t_list)
                 key_uset = sorted(key_uset)
@@ -121,25 +119,27 @@ def named_tree_get_common(t_list, info):
                 t_spec[k] = new_node
                 t_spec = new_node
                 iter_iset = iter(key_iset)
-            elif _check_file(k, t_list, info, error):
-                log.debug('Node %s of Tree is a value')
+            elif _check_file(k, t_list, i_list, error):
+                log.debug('[NamedTree] [SPEC] node %s is the value' %
+                          ('/'.join(path)+'/'+ str(k)))
             else:
-                log.warning('unmatched data type found')
-                for info in error[1]:
-                    log.warning('%s of %s is a dict' % ('/' + '/'.join(path)+'/'+k, info.name))
-                for info in info:
-                    if info not in error[1]:
-                        log.warning('%s of %s is NOT a dict' % ('/' + '/'.join(path)+'/'+k, info.name))
+                log.warning('[NamedTree] [SPEC] unmatched data found')
+                for i in i_list:
+                    if i not in error[1]:
+                        log.warning('[NamedTree] [SPEC] %s of %s is NOT a dict' % ('/' + '/'.join(path)+'/'+k, i.name))
+                    else:
+                        log.warning('[NamedTree] [SPEC] %s of %s is a dict' % ('/' + '/'.join(path)+'/'+k, i.name))
     return root_node
 
 (OP_KIND_LEAF, OP_KIND_DIR) = list(range(0,2))
-def named_tree_travel(op, t_spec, t_list, info, kind = OP_KIND_LEAF):
+def named_tree_travel(op, t_spec, t_list, data, kind = OP_KIND_LEAF):
     ''' A depth first tree travel implmentation with two variants.
     OP_KIND_LEAF means op operate on the leaf node of the tree.
     OP_KIND_DIR means op operate on all the leaves with a common parent.
-    info should be iteratable and each one is for each tree
-    each info should have the name property for debug'''
+    '''
 
+    i_list = data['T_list']
+    user_data = data['user_data']
     stack = []
     path = []
     error = [CHK_OK, None]
@@ -159,34 +159,34 @@ def named_tree_travel(op, t_spec, t_list, info, kind = OP_KIND_LEAF):
                 (t_list, t_spec, iter_spec, t_result) = si
                 path.pop()
         else:
-            if not _check_key(k, t_list, info, error):
-                for info in error[1]:
-                    log.warning('%s has no data at %s' % (info.name, '/'+'/'.join(path[1:])+'/'+k))
+            if not _check_key(k, t_list, i_list, error):
+                for i in error[1]:
+                    log.warning('[NamedTree] [Travel] %s has no value at %s' % (i.name, '/'+'/'.join(path)+'/'+str(k)))
             elif isinstance(t_spec[k], dict):
-                if _check_dir(k, t_list, info, error):
+                if _check_dir(k, t_list, i_list, error):
                     si = (t_list, t_spec, iter_spec, t_result)
                     stack.append(si)
-                    path.append(k)
+                    path.append(str(k))
                     t_list = list(map(lambda d:d[k], t_list))
                     t_spec = t_spec[k]
                     iter_spec = iter(t_spec)
                     t_result[k] = {}
                     t_result = t_result[k]
                 else:
-                    for info in error[1]:
-                        message += '%s of %s is NOT a dict' % ('/'+'/'.join(path)+'/'+k, info.name) + '\n'
+                    for i in error[1]:
+                        message += '[NamedTree] [Travel] %s of %s is NOT a dict' % ('/'+'/'.join(path)+'/'+str(k), i.name) + '\n'
                     raise TypeError(message)
             else:
                 if kind == OP_KIND_LEAF:
-                    t_result[k] = op(path, k, t_list, info)
+                    t_result[k] = op(path, k, t_list, user_data)
                 elif kind == OP_KIND_DIR:
-                    tmp = op(path, t_spec, t_list, info)
+                    tmp = op(path, t_spec, t_list, user_data)
                     k = path.pop()
                     si = stack.pop()
                     (t_list, t_spec, iter_spec, t_result) = si
                     t_result[k] = tmp
                 else:
-                    log.warning('UNKNOWN kind of operation')
+                    log.fatal('[NamedTree] [Travel] UNKNOWN kind of operation')
     return root_node
 
 class NamedTree:
@@ -205,12 +205,27 @@ class NamedTree:
         self.name = name
         self.tree = tree
         self.spec = None
+        # attributes for print
+        self.header_width = None
+        self.data_width = None
+        self.field_width = None
+        self.field_format_spec_start = None
+        self.field_format_spec_end = None
+        self.field_format_spec = None
+        self.field_prefix = None
+        self.field_suffix = None
+
+    def get_tree(self):
+        return self.tree
+
+    def set_tree(self, tree):
+        self.tree = tree
 
     def set_name(self, name):
         self.name = name
 
     def _get_branch(self, path):
-        ''' (dir1, dir2, dir3) '''
+        '''TODO test'''
         if not self.tree:
             return {}
         node = self.tree
@@ -219,92 +234,71 @@ class NamedTree:
         return node
 
     def get_branch(self, path):
-        t = self._get_dir(path)
+        '''TODO test'''
+        t = self._get_branch(path)
         name = '/'.join(path)
         return NamedTree(name, t)
 
     def set_branch(self, path, dir_v):
-        pass
+        raise NotImplementedError()
 
     def get_file(self, path):
-        pass
+        raise NotImplementedError()
 
     def set_file(self, path, file_v):
-        pass
+        raise NotImplementedError()
 
-    def get_tree(self):
-        return self.tree
 
-    def set_tree(self, tree):
-        self.tree = tree
-
-# a decorator extract a named tree from a NamedTree
+# a decorator to implement mathmatic operations
 def operator(prefix, kind = OP_KIND_LEAF):
     def real(func):
-        def wrapper(*T_list, info = None):
+        def wrapper(*T_list, **user_data):
+            data = {'T_list':T_list, 'user_data':user_data}
             t_spec = NamedTree.extract_spec(*T_list)
             t_list = list(map(lambda T:T.get_tree(), T_list))
-            if not info:
-                info = T_list
-            r_tree = named_tree_travel(func, t_spec, t_list, info, kind = kind)
-            t_names = list(map(lambda T:T.name, info))
+            r_tree = named_tree_travel(func, t_spec, t_list, data, kind = kind)
+            t_names = list(map(lambda T:T.name, T_list))
             R_tree = NamedTree('%s %s' % (prefix, ' '.join(t_names)))
             R_tree.set_tree(r_tree)
             return R_tree
         return wrapper
     return real
 
-# a decorator like operator without a return
-def operator_noreturn(kind = OP_KIND_LEAF):
-    def real(func):
-        def wrapper(*vector, info = None):
-            if not info:
-                log.error('No PainterInfo Provided')
-                return
-            t_spec = NamedTree.extract_spec(*vector)
-            t_list = list(map(lambda T:T.get_tree(), vector))
-            named_tree_travel(func, t_spec, t_list, info, kind = kind)
-        return wrapper
-    return real
-
-
 class Operator:
     '''The Namespace for Operators of NamedTree
     Some of them have only two operands, so they can be implemented
     as a special math method of NamedTree. Some ones have more than two operands.'''
 
-    # math method
-    #sum(*vector)
     @staticmethod
     @operator('the sum of')
-    def sum(path, k, t_list, info):
+    def sum(path, k, t_list, data):
         return sum(map(lambda t: t[k], t_list))
 
     @staticmethod
     @operator('the substract of')
-    def substract(T1, T2):
+    def substract(path, k, t_list, data):
         raise NotImplementedError()
 
     @staticmethod
-    @operator('the multiply of')
-    def multiply(*vector):
+    @operator('the product of')
+    def multiply(path, k, t_list, data):
         raise NotImplementedError()
 
     @staticmethod
     @operator('the divide of')
-    def divide(T1, T2):
+    def divide(path, k, t_list, data):
         raise NotImplementedError()
 
     # average(*vector)
     @staticmethod
     @operator('the average of')
-    def average(path, k, t_list, info):
+    def average(path, k, t_list, data):
         return sum(map(lambda t: t[k], t_list)) / len(t_list)
 
     # diff_ratio(T1, T2):
     @staticmethod
     @operator('the diff ratio of')
-    def diff_ratio(path, k, t_list, info):
+    def diff_ratio(path, k, t_list, data):
         diff = t_list[1][k] - t_list[0][k]
         ratio = diff / t_list[0][k]
         return ratio
@@ -312,8 +306,27 @@ class Operator:
     # union(*vector)
     @staticmethod
     @operator('the union list of')
-    def union(path, k, t_list, info):
+    def union(path, k, t_list, data):
         return list(map(lambda t: t[k], t_list))
+
+    # scale sum
+    @staticmethod
+    @operator('the product of')
+    def scale_multiply(path, k, t_list, user_data):
+        scale = user_data['scale']
+        tree = t_list[0]
+        return tree[k] * scale
+
+    @staticmethod
+    @operator('customized')
+    def user_defined(path, k, t_list, user_data):
+        v_list = list(map(lambda t: t[k], t_list))
+        cb_func = user_data['cb_func']
+        if hasattr(user_data, 'cb_data'):
+            cb_data = user_data['cb_data']
+            return cb_func(cb_data, v_list)
+        else:
+            return cb_func(v_list)
 
     @staticmethod
     def branch(path, *vector):
@@ -331,41 +344,8 @@ class Operator:
         else:
             return nv
 
-    # painting methods
-    @staticmethod
-    @operator_noreturn(kind = OP_KIND_LEAF)
-    def pnt_default(path, k, t_list, info):
-        iter_t = iter(t_list)
-        iter_i = iter(info)
-        str_path = list(map(lambda e:str(e), path))
-        prefix = '/'+'/'.join(str_path)+'/'+k
-        i = 0
-        prefix_space = str()
-        while i < len(prefix):
-            prefix_space += ' '
-            i += 1
-
-        t = next(iter_t)
-        info = next(iter_i)
-        print('%s of %s is %s' % (prefix, info.name, t[k]))
-
-        while True:
-            try:
-                t = next(iter_t)
-                info = next(iter_i)
-                print('%s    %s is %s' % (prefix_space, info.name, t[k]))
-            except StopIteration:
-                break
-
-    # spec(T_spec)
-    @staticmethod
-    @operator_noreturn(kind = OP_KIND_LEAF)
-    def pnt_spec(path, k, t_list, info):
-        print('%s' % ('/' + '/'.join(path)+'/'+k))
-
 NamedTree.Operator = Operator
 NamedTree.operator = operator
-NamedTree.operator_noreturn = operator_noreturn
 
 # a decorator for NamedTreeGroup
 # some operations need to be done together to finish one job.
@@ -373,23 +353,23 @@ def group_noreturn(kind = OP_KIND_LEAF):
     def real(func):
         def wrapper(group):
             T_list = group.T_list
+            data = {'T_list':T_list, 'user_data':group}
             t_spec = NamedTree.extract_spec(*T_list)
             t_list = list(map(lambda T:T.get_tree(), T_list))
-            named_tree_travel(func, t_spec, t_list, group, kind = kind)
+            named_tree_travel(func, t_spec, t_list, data, kind = kind)
         return wrapper
     return real
 
 class NamedTreeGroup:
-    group_noreturn = group_noreturn
-
     def __init__(self, *T_list):
         self.T_list = T_list
         self.t_spec = NamedTree.extract_spec(*T_list)
         for T in T_list:
             T.spec = self.t_spec
-        self.name = None
-        self.width = {'path':0}
-        self.template = {}
+        self.name = ""
+
+        self.leaf_render = self.__class__.LeafRender(self)
+        #TODO path_render
 
     def __iter__(self):
         return iter(self.T_list)
@@ -397,133 +377,199 @@ class NamedTreeGroup:
     def __getattr__(self, name):
         if hasattr(Operator, name):
             op = getattr(Operator, name)
-            return lambda : op(*self.T_list, info = self)
+            return lambda **user_data: op(*self.T_list, **user_data)
         else:
             return AttributeError()
-    
+
+    class LeafRender:
+        def __init__(self, group):
+            self.group = group
+
+            self.path_width = 0
+            self.path_width_fixed = 0
+            self.path_prefix = ""
+            self.path_suffix = ""
+
+            self.data_width = {}
+            self.field_width = {}
+            #self.field_width_fixed = {}
+            self.field_format_spec_start = {}
+            self.field_format_spec_end = {}
+            self.field_format_spec = {}
+            self.field_prefix = {}
+            self.field_suffix = {}
+
+            self.header_width = {}
+
+            for T in group:
+                n = T.name
+                self.data_width[n] = 0
+                self.field_width[n] = 0
+                #self.field_width_fixed[n] = 0
+                self.field_format_spec_start[n] = ""
+                self.field_format_spec_end[n] = ""
+                self.field_format_spec[n] = ""
+                self.field_prefix[n] = ""
+                self.field_suffix[n] = ""
+                self.header_width[n] = 0
+
+            self.delimiter = "    "
+            self.header_template = ""
+            self.row_template = ""
+
+        def set_path_width(**width):
+            for k in width:
+                self.path_width_fixed[k] = width[k]
+                
+        def set_path_prefix(self, tpl):
+            self.path_prefix = prefix
+
+        def set_path_suffix(self, suffix):
+            self.path_suffix = suffix
+        
+        def set_field_format_spec_start(self, **start):
+            pass
+
+        def set_field_format_spec_end(self, **end):
+            for k in end:
+                self.field_format_spec_end[k] = end[k]
+
+        def set_field_suffix(self, **suffix):
+            for k in suffix:
+                self.field_suffix[k] = suffix[k]
+
+        def merge_field_format_spec(self):
+            for T in self.group:
+                n = T.name
+                if self.data_width[n] == 0:
+                    spec = self.field_format_spec_start[n] + self.field_format_spec_end[n]
+                else:
+                    spec = self.field_format_spec[n] = self.field_format_spec_start[n] + "%d" % self.data_width[n] + self.field_format_spec_end[n]
+                self.field_format_spec[n] = spec
+
+        def set_delimiter(self, delimiter):
+            self.delimiter = delimiter
+
+        def set_header_width(self, **width):
+            for k in width:
+                self.header_width[k] = width[k]
+
+        def merge_width(self):
+            tmp1 = self.path_width
+            tmp2 = self.path_width_fixed
+            tmp3 = max(tmp1, tmp2)
+            self.path_width = tmp3
+
+            for T in self.group:
+                n = T.name
+                tmp1 = self.data_width[n]
+                tmp1 += len(self.field_prefix[n]) + len(self.field_suffix[n])
+                #tmp2 = self.field_width_fixed[T.name]
+                #tmp3 = max(tmp1, tmp2)
+                self.field_width[n] = tmp1
+
+        def merge_header(self):
+            for T in self.group:
+                tmp1 = self.field_width[T.name]
+                tmp2 = self.header_width[T.name]
+                tmp3 = max(tmp1, tmp2)
+                self.field_width[T.name] = tmp3
+                self.header_width[T.name] = tmp3
+
+        def create_template(self):
+            # first column
+            tmp_l = list()
+            tmp_l_h = list()
+
+            meta_tpl = '%s{%d:%d}%s'
+            tpl = meta_tpl % (self.path_prefix,
+                              0, #index
+                              self.path_width,
+                              self.path_suffix)
+
+            tmp_l.append(tpl)
+            tmp_l_h.append(tpl)
+            # data columns
+            i = 1
+            for T in self.group:
+                n = T.name
+                try:
+                    if len(self.field_format_spec) > 0:
+                        meta_tpl = '%s{%d:%s}%s'
+                        tpl = meta_tpl % (
+                            self.field_prefix[n],
+                            i,
+                            self.field_format_spec[n],
+                            self.field_suffix[n]
+                        )
+                    else:
+                        meta_tpl = '%s{%d}%s'
+                        tpl = meta_tpl % (
+                            self.field_prefix[n],
+                            i,
+                            self.field_suffix[n]
+                        )
+                    tmp_l.append(tpl)
+                    #header
+                    meta_tpl = '{%d:%d}'
+                    tpl = meta_tpl % (
+                        i,
+                        self.field_width[n]
+                    )
+                    tmp_l_h.append(tpl)
+                except Exception as error:
+                    log.error('tpl for field %d is %s',
+                              (i - 1, tpl))
+                    log.error('there should be only on %d in field_tpl')
+                    raise error
+                i += 1
+
+            self.row_template = self.delimiter.join(tmp_l)
+            self.header_template = self.delimiter.join(tmp_l_h)
+            print('[DEBUG] row_template %s' % self.row_template)
+            print('[DEBUG] header_template %s' % self.header_template)
+            
+
     @group_noreturn(kind = OP_KIND_LEAF)
-    def accum_width(path, k, t_list, self):
+    def _leaf_data_accum_width(path, k, t_list, self):
+        leaf_render = self.leaf_render
         l = 0
         for n in path:
             l += len(str(n)) + 1
-        self.width['path'] = max(self.width['path'], l)
+        l += len(str(k))
+        leaf_render.path_width = max(l, leaf_render.path_width)
 
         leaf_list = list(map(lambda t:t[k], t_list))
-        if k not in self.width:
-            self.width[k] = list(map(lambda leaf: len(str(leaf)), leaf_list))
-        else:
-            width_k = self.width[k]
-            self.width[k] = list(map(lambda leaf, width:max(len(str(leaf)), len(str(width))), leaf_list, width_k))
+        leaf_iter = iter(leaf_list)
+        for T in self.T_list:
+            n = T.name
+            leaf = next(leaf_iter)
+            leaf_str = format(leaf, leaf_render.field_format_spec[n])
+            leaf_render.data_width[T.name] = max (
+                leaf_render.data_width[T.name],
+                len(leaf_str)
+            )
 
-    @group_noreturn(kind = OP_KIND_DIR)
-    def pnt_mono(path, t_spec, t_list, self):
-        sys.stdout.write('/'.join(list(map(lambda d:str(d), path))))
-        for k in t_spec:
-            for tree in t_list:
-                sys.stdout.write('\t')
-                sys.stdout.write(str(tree[k]))
-        print()
+    @group_noreturn(kind = OP_KIND_LEAF)
+    def _leaf_field_print(path, k, t_list, self):
+        fields = list(map(lambda t:t[k], t_list))
+        first = '/'.join(list(map(lambda d:str(d), path))) + '/' +str(k)
+        fields.insert(0, first)
+        print(self.leaf_render.row_template.format(*fields))
 
+    def _leaf_header_print(self):
+        headers = list(map(lambda T:T.name, self.T_list))
+        # place holder for the first column
+        headers.insert(0, '')
+        # TODO more details is needed
+        print(self.leaf_render.header_template.format(*headers))
 
-if __name__ == '__main__':
-    ntree1 = {
-        'L1K0':{
-            'L2K0':{
-                'L3K0':{
-                    'L4K0':1, 'L4K1':2,'L4K2':3
-                },
-                'L3K1':{
-                    'L4K0':0.4, 'L4K1':0.5, 'L4K2':0.6
-                }
-            },
-            'L2K1':{
-                'L3K0':{
-                    'L4K0':2.1, 'L4K1':2.2, 'L4K2':2.3
-                },
-                'L3K1':{
-                    'L4K0':3, 'L4K1':4, 'L4K2':5
-                }
-            },
-        }
-    }
-    T1 = NamedTree('T1')
-    T1.set_tree(ntree1)
-
-    ntree2 = {
-        'L1K0':{
-            'L2K0':{
-                'L3K0':{
-                    'L4K0':1.1, 'L4K1':2.1,'L4K2':3.1
-                },
-                'L3K1':{
-                    'L4K0':0.41, 'L4K1':0.51, 'L4K2':0.61
-                }
-            },
-            'L2K1':{
-                'L3K0':{
-                    'L4K0':2.12, 'L4K1':2.22, 'L4K2':2.32
-                },
-                'L3K1':{
-                    'L4K0':6, 'L4K1':7, 'L4K2':8
-                }
-            },
-        }
-    }
-    T2 = NamedTree('T2')
-    T2.set_tree(ntree2)
-
-    ntree3 = {
-        'L1K0':{
-            'L2K0':{
-                'L3K0':{
-                    'L4K0':1.1, 'L4K1':2.1,'L4K2':3.1
-                },
-                'L3K1':101 # not a dict
-            },
-            'L2K1':{
-                'L3K0':{
-                    'L4K0':2.12, 'L4K1':2.22, 'L4K2':2.32
-                },
-                'L3K1':{
-                    'L4K0':6, 'L4K1':7, 'L4K2':8
-                }
-            },
-        }
-    }
-    T3 = NamedTree('T3')
-    T3.set_tree(ntree3)
-
-    ntree4 = {
-        'L1K0':{
-            'L2K0':{
-                'L3K0':{
-                    'L4K0':1, 'L4K1':2,'L4K2':3
-                },
-            },
-            'L2K1':{
-                'L3K1':{
-                    'L4K0':3, 'L4K1':4, 'L4K2':5
-                }
-            },
-        }
-    }
-    T4 = NamedTree('T4')
-    T4.set_tree(ntree4)
-
-    # test_named_ntree_get_common
-    print(ntree1)
-    #spec = NamedTree.get_spec_tree(T1, T2)
-    print(spec.name)
-    NamedTreePainter.spec(spec)
-
-
-    NamedTreePainter.default(T1, T2)
-
-    average_T1_T2 = NamedTreeOperater.average(T1, T2)
-    NamedTreePainter.default(average_T1_T2)
-
-    sum_T1_T2 = NamedTreeOperater.sum(T1, T2)
-    NamedTreePainter.default(sum_T1_T2)
-
-    diff_ratio_T1_T2 = NamedTreeOperater.diff_ratio(T1, T2)
-    NamedTreePainter.default(diff_ratio_T1_T2)
+    def leaf_print(self):
+        self.leaf_render.merge_field_format_spec()
+        self._leaf_data_accum_width()
+        self.leaf_render.merge_width()
+        self.leaf_render.merge_header()
+        self.leaf_render.merge_field_format_spec()
+        self.leaf_render.create_template()
+        self._leaf_header_print()
+        self._leaf_field_print()

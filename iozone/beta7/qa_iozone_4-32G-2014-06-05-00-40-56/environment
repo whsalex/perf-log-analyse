@@ -1,0 +1,16 @@
+SYNC_LOGGING
+0
+LINE
+27
+interrupt_flag
+/var/log/qa/ctcs2/qa_iozone_4-32G-2014-06-05-00-40-56/interrupt-flag
+WAIT
+0
+LOOP
+0
+verbose
+0
+runin_directory
+./runin
+save_directory
+/var/log/qa/ctcs2/qa_iozone_4-32G-2014-06-05-00-40-56

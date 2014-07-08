@@ -1,0 +1,25 @@
+Name        : kernel-default
+Version     : 3.12.20
+Release     : 1.4
+Architecture: x86_64
+Install Date: Wed May 28 11:04:22 2014
+Group       : System/Kernel
+Size        : 143156395
+License     : GPL-2.0
+Signature   : RSA/SHA256, Sun May 18 02:37:57 2014, Key ID 70af9e8139db7c82
+Source RPM  : kernel-default-3.12.20-1.4.nosrc.rpm
+Build Date  : Sun May 18 02:32:00 2014
+Build Host  : build73
+Relocations : (not relocatable)
+Packager    : http://bugs.opensuse.org
+Vendor      : SUSE LINUX Products GmbH, Nuernberg, Germany
+URL         : http://www.kernel.org/
+Summary     : The Standard Kernel
+Description :
+The standard kernel for both uniprocessor and multiprocessor systems.
+
+
+Source Timestamp: 2014-05-16 14:05:19 +0200
+GIT Revision: 1636e9b9787d3b7b30fa9d939b9f307a976bc85a
+GIT Branch: SLE12
+Distribution: SUSE:SLE-12:GA

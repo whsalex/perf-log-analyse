@@ -1,0 +1,47 @@
+--
+ABUILD_INFO : /dev/cciss/c0d0p1 /abuild xfs rw,relatime,attr2,delaylog,noquota 0 0
+Wed May 14 07:48:20 CEST 2014: qa_iozone_4-32G success: on 1/1 after 0s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.300 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, 
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root.
+
+	Run began: Wed May 14 07:48:20 2014
+
+	Auto Mode
+	Using maximum file size of 33554432 kilobytes.
+	Using minimum file size of 4194304 kilobytes.
+	Using Minimum Record Size 4096 KB
+	Command line used: /usr/bin/iozone -a -g 32g -n 4g -y 4096 -f /abuild/iozone
+	Output is in Kbytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 Kbytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                            random  random    bkwd  record  stride                                   
+              KB  reclen   write rewrite    read    reread    read   write    read rewrite    read   fwrite frewrite   fread  freread
+         4194304    4096 2072100 3825464  5434739  5452875 5442307 4272656 5426449 6097488 5443238  1514359  2289722 5444333  5454407
+         4194304    8192 1801850 3008476  4284116  4290668 4294833 3282814 4283687 3574459 4285512  1458075  2167599 4293860  4287492
+         4194304   16384 1783338 2959627  4139035  4149374 4146802 3221728 4145355 3352755 4142931  1449678  2153843 4171557  4176304
+         8388608    4096  356501  360801  5443281  5454596 5445917  351409 5443323 6039018 5439293   354441   362447 5450913  5459253
+         8388608    8192  357330  361578  4322852  4327761 4324686  354991 4326705 3558840 4309879   354876   363045 4297169  4306826
+         8388608   16384  356921  364257  4169506  4178040 4174386  358248 4176403 3352523 4158322   356405   356320 4166362  4171469
+        16777216    4096  172032  183570   232791   238654  432175  170129  459929 6543700  445520   169477   182815  253925   251769
+        16777216    8192  169794  185219   258470   257303  484471  178848  470249 3765739  485418   169114   185407  252628   255382
+        16777216   16384  160142  174800   236859   241233  462357  168893  495482 3534874  465920   168724   185205  252417   259150
+        33554432    4096  148924  147620   135469   136046  119207  127832  138737 6506408  144509   148752   147718  134043   136163
+        33554432    8192  148857  148648   135522   135900  133050  139022  150021 3770003  157215   124641   124536  111854   108585
+        33554432   16384  148944  148789   135322   135888  140801  143588  154871 3489041  163818   148926   148620  135356   135777
+
+iozone test complete.
+Wed May 14 12:00:24 CEST 2014: qa_iozone_4-32G success: on 1/1 after 4h12m4s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
