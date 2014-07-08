@@ -1,0 +1,28 @@
+Name        : kernel-xen
+Version     : 3.12.22
+Release     : 2.6
+Architecture: x86_64
+Install Date: Wed Jun 18 23:02:48 2014
+Group       : System/Kernel
+Size        : 131418813
+License     : GPL-2.0
+Signature   : RSA/SHA256, Tue Jun 17 00:02:03 2014, Key ID 70af9e8139db7c82
+Source RPM  : kernel-xen-3.12.22-2.6.nosrc.rpm
+Build Date  : Mon Jun 16 23:56:31 2014
+Build Host  : build72
+Relocations : (not relocatable)
+Packager    : https://www.suse.com/
+Vendor      : SUSE LLC <https://www.suse.com/>
+URL         : http://www.kernel.org/
+Summary     : The Xen Kernel
+Description :
+The Linux kernel for Xen paravirtualization.
+
+This kernel can be used both as the domain0 ("xen0") and as an
+unprivileged ("xenU") kernel.
+
+
+Source Timestamp: 2014-06-13 15:46:18 +0200
+GIT Revision: ee1c2a2a7bb7ed8b6220b44cef77a4eb5b08e01c
+GIT Branch: SLE12
+Distribution: SUSE Linux Enterprise 12

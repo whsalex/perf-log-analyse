@@ -1,0 +1,2307 @@
+01: None 00.0: 10105 BIOS
+  [Created at bios.186]
+  Unique ID: rdCR.lZF+r4EgHp4
+  Hardware Class: bios
+  BIOS Keyboard LED Status:
+    Scroll Lock: off
+    Num Lock: off
+    Caps Lock: off
+  Serial Port 0: 0x3f8
+  Serial Port 1: 0x2f8
+  Base Memory: 624 kB
+  PnP BIOS: @@@0000
+  BIOS: extended read supported
+  MP spec rev 1.4 info:
+    OEM id: "86B"
+    Product id: "THURLEY"
+    1 CPUs (0 disabled)
+  BIOS32 Service Directory Entry: 0xfd7e1
+  SMBIOS Version: 2.5
+  Type 38 Record: #0
+    Data 00: 26 10 00 00 01 20 20 ff a3 0c 00 00 00 00 00 00
+  Processor Info: #1
+    Socket: "Node 1 Socket 1"
+    Socket Type: 0x04 (ZIF Socket)
+    Socket Status: Populated
+    Type: 0x03 (CPU)
+    Family: 0xb5 (Xeon MP)
+    Manufacturer: "Intel(R) Corporation"
+    Version: "Intel(R) Xeon(R) CPU           E5606  @ 2.13GHz"
+    Processor ID: 0xbfebfbff000206c2
+    Status: 0x01 (Enabled)
+    Voltage: 1.2 V
+    Max. Speed: 4400 MHz
+    Current Speed: 2130 MHz
+    L1 Cache: #2
+    L2 Cache: #3
+    L3 Cache: #4
+  Cache Info: #2
+    Designation: "Internal Cache Level 1"
+    Level: L1
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x05 (Single-bit)
+    Type: 0x04 (Data)
+    Associativity: 0x07 (8-way Set-Associative)
+    Max. Size: 32 kB
+    Current Size: 32 kB
+    Supported SRAM Types: 0x0040 (Asynchronous)
+    Current SRAM Type: 0x0040 (Asynchronous)
+  Cache Info: #3
+    Designation: "Internal Cache Level 2"
+    Level: L2
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x05 (Single-bit)
+    Type: 0x05 (Unified)
+    Associativity: 0x07 (8-way Set-Associative)
+    Max. Size: 256 kB
+    Current Size: 256 kB
+    Supported SRAM Types: 0x0040 (Asynchronous)
+    Current SRAM Type: 0x0040 (Asynchronous)
+  Cache Info: #4
+    Designation: "Internal Cache Level 3"
+    Level: L3
+    State: Enabled
+    Mode: 0x01 (Write Back)
+    Location: 0x00 (Internal, Not Socketed)
+    ECC: 0x05 (Single-bit)
+    Type: 0x05 (Unified)
+    Associativity: 0x08 (16-way Set-Associative)
+    Max. Size: 8192 kB
+    Current Size: 8192 kB
+    Supported SRAM Types: 0x0040 (Asynchronous)
+    Current SRAM Type: 0x0040 (Asynchronous)
+  Physical Memory Array: #5
+    Use: 0x03 (System memory)
+    Location: 0x03 (Motherboard)
+    Slots: 18
+    Max. Size: 192 GB
+    ECC: 0x05 (Single-bit)
+  Type 6 Record: #6
+    Data 00: 06 0c 06 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM01"
+  Memory Device: #7
+    Location: "DIMM01"
+    Bank: "BANK01"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #8
+    Data 00: 06 0c 08 00 01 00 00 00 01 0c 0c 00
+    String 1: "DIMM02"
+  Memory Device: #9
+    Location: "DIMM02"
+    Bank: "BANK02"
+    Manufacturer: "Samsung"
+    Serial: "A9AA5E47"
+    Asset Tag: "Unknown"
+    Part Number: "M393B5270CH0-YH9"
+    Memory Array: #5
+    Form Factor: 0x09 (DIMM)
+    Type: 0x01 (Other)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 64 bits (+8 ECC bits)
+    Size: 4 GB
+    Speed: 1067 MHz
+  Type 6 Record: #10
+    Data 00: 06 0c 0a 00 01 00 00 00 01 0c 0c 00
+    String 1: "DIMM03"
+  Memory Device: #11
+    Location: "DIMM03"
+    Bank: "BANK03"
+    Manufacturer: "Samsung"
+    Serial: "3FD22086"
+    Asset Tag: "Unknown"
+    Part Number: "M393B5270CH0-YH9"
+    Memory Array: #5
+    Form Factor: 0x09 (DIMM)
+    Type: 0x01 (Other)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 64 bits (+8 ECC bits)
+    Size: 4 GB
+    Speed: 1067 MHz
+  Type 6 Record: #12
+    Data 00: 06 0c 0c 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM04"
+  Memory Device: #13
+    Location: "DIMM04"
+    Bank: "BANK04"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #14
+    Data 00: 06 0c 0e 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM05"
+  Memory Device: #15
+    Location: "DIMM05"
+    Bank: "BANK05"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #16
+    Data 00: 06 0c 10 00 01 00 00 00 01 0c 0c 00
+    String 1: "DIMM06"
+  Memory Device: #17
+    Location: "DIMM06"
+    Bank: "BANK06"
+    Manufacturer: "Samsung"
+    Serial: "29946442"
+    Asset Tag: "Unknown"
+    Part Number: "M393B5270CH0-YH9"
+    Memory Array: #5
+    Form Factor: 0x09 (DIMM)
+    Type: 0x01 (Other)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 64 bits (+8 ECC bits)
+    Size: 4 GB
+    Speed: 1067 MHz
+  Type 6 Record: #18
+    Data 00: 06 0c 12 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM07"
+  Memory Device: #19
+    Location: "DIMM07"
+    Bank: "BANK07"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #20
+    Data 00: 06 0c 14 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM08"
+  Memory Device: #21
+    Location: "DIMM08"
+    Bank: "BANK08"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #22
+    Data 00: 06 0c 16 00 01 00 00 00 01 0c 0c 00
+    String 1: "DIMM09"
+  Memory Device: #23
+    Location: "DIMM09"
+    Bank: "BANK09"
+    Manufacturer: "Micron"
+    Serial: "5C567FDD"
+    Asset Tag: "Unknown"
+    Part Number: "18KSF51272PZ-1G4D1"
+    Memory Array: #5
+    Form Factor: 0x09 (DIMM)
+    Type: 0x01 (Other)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 64 bits (+8 ECC bits)
+    Size: 4 GB
+    Speed: 1067 MHz
+  Type 6 Record: #24
+    Data 00: 06 0c 18 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM10"
+  Memory Device: #25
+    Location: "DIMM10"
+    Bank: "BANK10"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #26
+    Data 00: 06 0c 1a 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM11"
+  Memory Device: #27
+    Location: "DIMM11"
+    Bank: "BANK11"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #28
+    Data 00: 06 0c 1c 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM12"
+  Memory Device: #29
+    Location: "DIMM12"
+    Bank: "BANK12"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #30
+    Data 00: 06 0c 1e 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM13"
+  Memory Device: #31
+    Location: "DIMM13"
+    Bank: "BANK13"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #32
+    Data 00: 06 0c 20 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM14"
+  Memory Device: #33
+    Location: "DIMM14"
+    Bank: "BANK14"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #34
+    Data 00: 06 0c 22 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM15"
+  Memory Device: #35
+    Location: "DIMM15"
+    Bank: "BANK15"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #36
+    Data 00: 06 0c 24 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM16"
+  Memory Device: #37
+    Location: "DIMM16"
+    Bank: "BANK16"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #38
+    Data 00: 06 0c 26 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM17"
+  Memory Device: #39
+    Location: "DIMM17"
+    Bank: "BANK17"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Type 6 Record: #40
+    Data 00: 06 0c 28 00 01 00 00 00 00 7f 7f 00
+    String 1: "DIMM18"
+  Memory Device: #41
+    Location: "DIMM18"
+    Bank: "BANK18"
+    Memory Array: #5
+    Form Factor: 0x02 (Unknown)
+    Type: 0x02 (Unknown)
+    Type Detail: 0x0004 (Unknown)
+    Data Width: 0 bits
+    Size: No Memory Installed
+  Memory Array Mapping: #42
+    Memory Array: #5
+    Partition Width: 18
+    Start Address: 0x0000000000000000
+    End Address: 0x0000000400000000
+  BIOS Info: #43
+    Vendor: "IBM Corp."
+    Version: "-[D6E150CUS-1.11]-"
+    Date: "02/08/2011"
+    Start Address: 0xe0000
+    ROM Size: 4096 kB
+    Features: 0x0633000000005e099a80
+      PCI supported
+      PnP supported
+      BIOS flashable
+      BIOS shadowing allowed
+      CD boot supported
+      Selectable boot supported
+      EDD spec supported
+      2.88MB Floppy supported
+      Print Screen supported
+      8042 Keyboard Services supported
+      Serial Services supported
+      CGA/Mono Video supported
+      ACPI supported
+      USB Legacy supported
+      LS-120 boot supported
+      ATAPI ZIP boot supported
+      F12 Network boot supported
+  System Info: #44
+    Manufacturer: "IBM"
+    Product: "System x3650 M3 -[7945O01]-"
+    Version: "00"
+    Serial: "99N5338"
+    UUID: undefined, but settable
+    Wake-up: 0x0a (Other)
+  Board Info: #45
+    Manufacturer: "IBM"
+    Product: "69Y5698"
+    Version: "(none)"
+    Serial: "13M0VF"
+    Asset Tag: "(none)"
+    Type: 0x0a (Motherboard)
+    Features: 0x09
+      Hosting Board
+      Replaceable
+    Location: "Rear Bottom"
+    Chassis: #46
+  Chassis Info: #46
+    Manufacturer: "IBM"
+    Version: "none"
+    Serial: "none"
+    Asset Tag: "none"
+    Type: 0x17 (Rack Mount Chassis)
+    Bootup State: 0x03 (Safe)
+    Power Supply State: 0x03 (Safe)
+    Thermal State: 0x01 (Other)
+    Security Status: 0x01 (Other)
+  Port Connector: #47
+    Type: 0x1f (Network Port)
+    Internal Designator: "Uxxx"
+    External Designator: "Ethernet 1"
+    External Connector: 0x0b (RJ-45)
+  Port Connector: #48
+    Type: 0x1f (Network Port)
+    Internal Designator: "Uxxx"
+    External Designator: "Ethernet 2"
+    External Connector: 0x0b (RJ-45)
+  Port Connector: #49
+    Type: 0x21 (Other)
+    Internal Designator: "J90"
+    Internal Connector: 0x22 (Other)
+    External Designator: "SAS"
+  Port Connector: #50
+    Type: 0x21 (Other)
+    Internal Designator: "J123"
+    Internal Connector: 0x22 (Other)
+    External Designator: "SATA"
+  Port Connector: #51
+    Type: 0x09 (Serial Port 16550A Compatible)
+    Internal Designator: "none"
+    Internal Connector: 0xff (Other)
+    External Designator: "COM 1 MM"
+    External Connector: 0x08 (DB-9 pin male)
+  Port Connector: #52
+    Type: 0x1c (Video Port)
+    Internal Designator: "Uxxx"
+    External Designator: "Video 1"
+    External Connector: 0x07 (DB-15 pin female)
+  Port Connector: #53
+    Type: 0x1c (Video Port)
+    Internal Designator: "Uxxx"
+    External Designator: "Video 2"
+    External Connector: 0x07 (DB-15 pin female)
+  Port Connector: #54
+    Type: 0x10 (USB)
+    Internal Designator: "none"
+    External Designator: "USB 1"
+    External Connector: 0x12 (Access Bus [USB])
+  Port Connector: #55
+    Type: 0x10 (USB)
+    Internal Designator: "none"
+    External Designator: "USB 2"
+    External Connector: 0x12 (Access Bus [USB])
+  Port Connector: #56
+    Type: 0x10 (USB)
+    Internal Designator: "none"
+    External Designator: "USB 3"
+    External Connector: 0x12 (Access Bus [USB])
+  Port Connector: #57
+    Type: 0x10 (USB)
+    Internal Designator: "none"
+    External Designator: "USB 4"
+    External Connector: 0x12 (Access Bus [USB])
+  System Slot: #58
+    Designation: "System Slot 1"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0b (Other)
+    Status: 0x03 (Available)
+    Length: 0x04 (Long)
+    Slot ID: 1
+    Characteristics: 0x0004 (3.3 V)
+  System Slot: #59
+    Designation: "System Slot 2"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0b (Other)
+    Status: 0x03 (Available)
+    Length: 0x03 (Short)
+    Slot ID: 2
+    Characteristics: 0x0004 (3.3 V)
+  System Slot: #60
+    Designation: "System Slot 3"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0b (Other)
+    Status: 0x03 (Available)
+    Length: 0x04 (Long)
+    Slot ID: 3
+    Characteristics: 0x0004 (3.3 V)
+  System Slot: #61
+    Designation: "System Slot 4"
+    Type: 0xa5 (Other)
+    Bus Width: 0x0b (Other)
+    Status: 0x03 (Available)
+    Length: 0x03 (Short)
+    Slot ID: 4
+    Characteristics: 0x0004 (3.3 V)
+  OEM Strings: #62
+    IBM SystemX
+  On Board Devices: #63
+    Video: "Matrox G200eV"
+  On Board Devices: #64
+    Ethernet: "Ethernet 1 BroadCom 5709C Ethernet Controller" (disabled)
+  On Board Devices: #65
+    Ethernet: "Ethernet 2 BroadCom 5709C Ethernet Controller" (disabled)
+  On Board Devices: #66
+    Ethernet: "Ethernet 3 BroadCom 5709C Ethernet Controller" (disabled)
+  On Board Devices: #67
+    Ethernet: "Ethernet 4 BroadCom 5709C Ethernet Controller" (disabled)
+  OEM Strings: #68
+    IBM SystemX
+  OEM Strings: #69
+    $SI Integrated Management Module 1.25 -[YUOO91K-1.25]-
+  OEM Strings: #70
+    $BD
+  OEM Strings: #71
+    $CR CRTM Code 1.11 -[D6CP50CUS]-
+  OEM Strings: #72
+    $DS Preboot Diagnostics (DSA) 3.33 -[DSYT83D]-
+  OEM Strings: #73
+    $MV Min UEFI Version -[D6E145CUS-1.06]-
+  OEM Strings: #74
+    $BP UEFI Primary Version -[D6E150CUS-1.11]-
+  OEM Strings: #75
+    $BB Backup BIOS Version -[D6E150CUS]-
+  OEM Strings: #76
+    $CF Current UEFI Flash Bank - Primary
+  OEM Strings: #77
+    $IS IDEBus Enabled
+  OEM Strings: #78
+    $QP QPI Version -[01.85]-
+  OEM Strings: #79
+    $CS CSM Version -[CSE132-US]-
+  OEM Strings: #80
+  System Config Options (Jumpers & Switches) #81:
+    SW? TPM Physical Presence Switch, J? TPM Physical Presence Jumper
+  Language Info: #82
+    Languages: English
+    Current: English
+  Type 27 Record: #83
+    Data 00: 1b 0e 53 00 00 00 42 00 00 00 00 00 00 00
+  Type 32 Record: #84
+    Data 00: 20 14 54 00 00 00 00 00 00 00 00 00 00 00 00 00
+    Data 10: 00 00 00 00
+  Processor Info: #85
+    Socket: "Node 1 Socket 2"
+    Socket Type: 0x04 (ZIF Socket)
+    Socket Status: Empty
+    Type: 0x03 (CPU)
+    Family: 0xb5 (Xeon MP)
+    Status: 0x00 (Unknown)
+    Voltage: 1.2 V
+    Max. Speed: 4400 MHz
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+02: None 00.0: 10107 System
+  [Created at sys.63]
+  Unique ID: rdCR.n_7QNeEnh23
+  Hardware Class: system
+  Model: "System"
+  Formfactor: "desktop"
+  Driver Info #0:
+    Driver Status: thermal,fan are not active
+    Driver Activation Cmd: "modprobe thermal; modprobe fan"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+03: None 00.0: 10104 FPU
+  [Created at misc.191]
+  Unique ID: rdCR.EMpH5pjcahD
+  Hardware Class: unknown
+  Model: "FPU"
+  I/O Ports: 0xf0-0xff (rw)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+04: None 00.0: 0801 DMA controller (8237)
+  [Created at misc.205]
+  Unique ID: rdCR.f5u1ucRm+H9
+  Hardware Class: unknown
+  Model: "DMA controller"
+  I/O Ports: 0x00-0xcf7 (rw)
+  I/O Ports: 0xc0-0xdf (rw)
+  I/O Ports: 0x80-0x8f (rw)
+  DMA: 4
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+05: None 00.0: 0800 PIC (8259)
+  [Created at misc.218]
+  Unique ID: rdCR.8uRK7LxiIA2
+  Hardware Class: unknown
+  Model: "PIC"
+  I/O Ports: 0x20-0x21 (rw)
+  I/O Ports: 0xa0-0xa1 (rw)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+06: None 00.0: 0802 Timer (8254)
+  [Created at misc.229]
+  Unique ID: rdCR.AJKleuxpiP0
+  Hardware Class: unknown
+  Model: "Timer"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+07: None 00.0: 0900 Keyboard controller
+  [Created at misc.250]
+  Unique ID: rdCR.9N+EecqykME
+  Hardware Class: unknown
+  Model: "Keyboard controller"
+  I/O Port: 0x60 (rw)
+  I/O Port: 0x64 (rw)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+08: None 00.0: 10400 PS/2 Controller
+  [Created at misc.303]
+  Unique ID: rdCR.DziBbWO85o5
+  Hardware Class: unknown
+  Model: "PS/2 Controller"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+13: None 00.0: 10102 Main Memory
+  [Created at memory.74]
+  Unique ID: rdCR.CxwsZFjVASF
+  Hardware Class: memory
+  Model: "Main Memory"
+  Memory Size: 15 GB + 512 MB
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+14: PCI 00.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: qLht.YRKw146mM65
+  SysFS ID: /devices/pci0000:00/0000:00:00.0
+  SysFS BusID: 0000:00:00.0
+  Hardware Class: bridge
+  Model: "Intel 5520 I/O Hub to ESI Port"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3406 "5520 I/O Hub to ESI Port"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x7270 
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003406sv00001014sd00007270bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+15: PCI 01.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: vSkL.IhM5noxxQ+3
+  SysFS ID: /devices/pci0000:00/0000:00:01.0
+  SysFS BusID: 0000:00:01.0
+  Hardware Class: bridge
+  Model: "Intel 5520/5500/X58 I/O Hub PCI Express Root Port 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3408 "5520/5500/X58 I/O Hub PCI Express Root Port 1"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3408 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d00003408sv00001014sd00003408bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+16: PCI 02.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: _Znp.KjuGMC2rq_7
+  SysFS ID: /devices/pci0000:00/0000:00:02.0
+  SysFS BusID: 0000:00:02.0
+  Hardware Class: bridge
+  Model: "Intel 5520/5500/X58 I/O Hub PCI Express Root Port 2"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3409 "5520/5500/X58 I/O Hub PCI Express Root Port 2"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3409 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d00003409sv00001014sd00003409bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+17: PCI 03.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: 3hqH.MlQSxb8kE_B
+  SysFS ID: /devices/pci0000:00/0000:00:03.0
+  SysFS BusID: 0000:00:03.0
+  Hardware Class: bridge
+  Model: "Intel 5520/5500/X58 I/O Hub PCI Express Root Port 3"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x340a "5520/5500/X58 I/O Hub PCI Express Root Port 3"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x340a 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d0000340Asv00001014sd0000340Abc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+18: PCI 05.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: CvwD.QpUp5PLW2z3
+  SysFS ID: /devices/pci0000:00/0000:00:05.0
+  SysFS BusID: 0000:00:05.0
+  Hardware Class: bridge
+  Model: "Intel 5520/X58 I/O Hub PCI Express Root Port 5"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x340c "5520/X58 I/O Hub PCI Express Root Port 5"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x340c 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d0000340Csv00001014sd0000340Cbc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+19: PCI 07.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: M71A.UtYAGCYIsxB
+  SysFS ID: /devices/pci0000:00/0000:00:07.0
+  SysFS BusID: 0000:00:07.0
+  Hardware Class: bridge
+  Model: "Intel 5520/5500/X58 I/O Hub PCI Express Root Port 7"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x340e "5520/5500/X58 I/O Hub PCI Express Root Port 7"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x340e 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d0000340Esv00001014sd0000340Ebc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+20: PCI 09.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: WL76.YxcXQ+k4gw3
+  SysFS ID: /devices/pci0000:00/0000:00:09.0
+  SysFS BusID: 0000:00:09.0
+  Hardware Class: bridge
+  Model: "Intel 7500/5520/5500/X58 I/O Hub PCI Express Root Port 9"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3410 "7500/5520/5500/X58 I/O Hub PCI Express Root Port 9"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3410 
+  Revision: 0x22
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d00003410sv00001014sd00003410bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+21: PCI 10.0: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: 37TO.B8+Rz8Kl_Q1
+  SysFS ID: /devices/pci0000:00/0000:00:10.0
+  SysFS BusID: 0000:00:10.0
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 Physical and Link Layer Registers Port 0"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3425 "7500/5520/5500/X58 Physical and Link Layer Registers Port 0"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003425sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+22: PCI 10.1: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: wRyD.iYxBSjRSWp1
+  SysFS ID: /devices/pci0000:00/0000:00:10.1
+  SysFS BusID: 0000:00:10.1
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 Routing and Protocol Layer Registers Port 0"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3426 "7500/5520/5500/X58 Routing and Protocol Layer Registers Port 0"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003426sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+23: PCI 11.0: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: 7EWs.DztxwHZ92C2
+  SysFS ID: /devices/pci0000:00/0000:00:11.0
+  SysFS BusID: 0000:00:11.0
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500 Physical and Link Layer Registers Port 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3427 "7500/5520/5500 Physical and Link Layer Registers Port 1"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003427sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+24: PCI 11.1: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: +Y+h.kNqhPsgsZa2
+  SysFS ID: /devices/pci0000:00/0000:00:11.1
+  SysFS BusID: 0000:00:11.1
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500 Routing & Protocol Layer Register Port 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3428 "7500/5520/5500 Routing & Protocol Layer Register Port 1"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003428sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+25: PCI 14.0: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: MZfG.qsUBIHO5kt4
+  SysFS ID: /devices/pci0000:00/0000:00:14.0
+  SysFS BusID: 0000:00:14.0
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 I/O Hub System Management Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x342e "7500/5520/5500/X58 I/O Hub System Management Registers"
+  Revision: 0x22
+  Driver: "i7core_edac"
+  Driver Modules: "i7core_edac"
+  Module Alias: "pci:v00008086d0000342Esv00000000sd00000000bc08sc00i00"
+  Driver Info #0:
+    Driver Status: i7core_edac is active
+    Driver Activation Cmd: "modprobe i7core_edac"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+26: PCI 14.1: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: Eu86.eu9CXRzdPH0
+  SysFS ID: /devices/pci0000:00/0000:00:14.1
+  SysFS BusID: 0000:00:14.1
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3422 "7500/5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003422sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+27: PCI 14.2: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: 5Dex.9J6y++4Lxf0
+  SysFS ID: /devices/pci0000:00/0000:00:14.2
+  SysFS BusID: 0000:00:14.2
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 I/O Hub Control Status and RAS Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3423 "7500/5520/5500/X58 I/O Hub Control Status and RAS Registers"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003423sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+28: PCI 14.3: 0800 PIC (8259)
+  [Created at pci.328]
+  Unique ID: yX7n._+wg5wvM+H7
+  SysFS ID: /devices/pci0000:00/0000:00:14.3
+  SysFS BusID: 0000:00:14.3
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 I/O Hub Throttle Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3438 "7500/5520/5500/X58 I/O Hub Throttle Registers"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d00003438sv00000000sd00000000bc08sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+29: PCI 15.0: 0800 PIC (IO(X)-APIC)
+  [Created at pci.328]
+  Unique ID: Rgik.rH173w_Yn5A
+  SysFS ID: /devices/pci0000:00/0000:00:15.0
+  SysFS BusID: 0000:00:15.0
+  Hardware Class: unknown
+  Model: "Intel 7500/5520/5500/X58 Trusted Execution Technology Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x342f "7500/5520/5500/X58 Trusted Execution Technology Registers"
+  Revision: 0x22
+  Module Alias: "pci:v00008086d0000342Fsv00000000sd00000000bc08sc00i20"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+30: PCI 16.0: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: WnlC.W6PAQNmkiRF
+  SysFS ID: /devices/pci0000:00/0000:00:16.0
+  SysFS BusID: 0000:00:16.0
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3430 "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3430 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d00003430sv00001014sd00003430bc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+31: PCI 16.1: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: N6F2.Y8xL+msd6R3
+  SysFS ID: /devices/pci0000:00/0000:00:16.1
+  SysFS BusID: 0000:00:16.1
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3431 "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3431 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d00003431sv00001014sd00003431bc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+32: PCI 16.2: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: FRkt.aATXaAzWWQ7
+  SysFS ID: /devices/pci0000:00/0000:00:16.2
+  SysFS BusID: 0000:00:16.2
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3432 "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3432 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d00003432sv00001014sd00003432bc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+33: PCI 16.3: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: 6mDj.cC+i9a3QwPB
+  SysFS ID: /devices/pci0000:00/0000:00:16.3
+  SysFS BusID: 0000:00:16.3
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3433 "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3433 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d00003433sv00001014sd00003433bc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+34: PCI 16.4: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: _4jY.IugvLa3VtV3
+  SysFS ID: /devices/pci0000:00/0000:00:16.4
+  SysFS BusID: 0000:00:16.4
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3429 "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3429 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d00003429sv00001014sd00003429bc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+35: PCI 16.5: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: rPCO.KwC5xz9OHV7
+  SysFS ID: /devices/pci0000:00/0000:00:16.5
+  SysFS BusID: 0000:00:16.5
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x342a "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x342a 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d0000342Asv00001014sd0000342Abc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+36: PCI 16.6: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: ikhD.MykGWNGHhUB
+  SysFS ID: /devices/pci0000:00/0000:00:16.6
+  SysFS BusID: 0000:00:16.6
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x342b "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x342b 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d0000342Bsv00001014sd0000342Bbc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+37: PCI 16.7: 0880 System peripheral
+  [Created at pci.328]
+  Unique ID: a3B3.O_GS5nMA5UF
+  SysFS ID: /devices/pci0000:00/0000:00:16.7
+  SysFS BusID: 0000:00:16.7
+  Hardware Class: unknown
+  Model: "Intel 5520/5500/X58 Chipset QuickData Technology Device"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x342c "5520/5500/X58 Chipset QuickData Technology Device"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x342c 
+  Revision: 0x22
+  Driver: "ioatdma"
+  Driver Modules: "ioatdma"
+  Module Alias: "pci:v00008086d0000342Csv00001014sd0000342Cbc08sc80i00"
+  Driver Info #0:
+    Driver Status: ioatdma is active
+    Driver Activation Cmd: "modprobe ioatdma"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+38: PCI 1a.0: 0c03 USB Controller (UHCI)
+  [Created at pci.328]
+  Unique ID: pwJ7.VZ_cNcV2gl7
+  SysFS ID: /devices/pci0000:00/0000:00:1a.0
+  SysFS BusID: 0000:00:1a.0
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB UHCI Controller #4"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a37 "82801JI (ICH10 Family) USB UHCI Controller #4"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a37 
+  Driver: "uhci_hcd"
+  Driver Modules: "uhci_hcd"
+  I/O Ports: 0x20a0-0x20bf (rw)
+  Module Alias: "pci:v00008086d00003A37sv00001014sd00003A37bc0Csc03i00"
+  Driver Info #0:
+    Driver Status: uhci-hcd is active
+    Driver Activation Cmd: "modprobe uhci-hcd"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+39: PCI 1a.1: 0c03 USB Controller (UHCI)
+  [Created at pci.328]
+  Unique ID: gFpy.XbWoy+bx3lB
+  SysFS ID: /devices/pci0000:00/0000:00:1a.1
+  SysFS BusID: 0000:00:1a.1
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB UHCI Controller #5"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a38 "82801JI (ICH10 Family) USB UHCI Controller #5"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a38 
+  Driver: "uhci_hcd"
+  Driver Modules: "uhci_hcd"
+  I/O Ports: 0x2080-0x209f (rw)
+  Module Alias: "pci:v00008086d00003A38sv00001014sd00003A38bc0Csc03i00"
+  Driver Info #0:
+    Driver Status: uhci-hcd is active
+    Driver Activation Cmd: "modprobe uhci-hcd"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+40: PCI 1a.7: 0c03 USB Controller (EHCI)
+  [Created at pci.328]
+  Unique ID: sClz.9kEiZgUGDY0
+  SysFS ID: /devices/pci0000:00/0000:00:1a.7
+  SysFS BusID: 0000:00:1a.7
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB2 EHCI Controller #2"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a3c "82801JI (ICH10 Family) USB2 EHCI Controller #2"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a3c 
+  Driver: "ehci-pci"
+  Driver Modules: "ehci_pci"
+  Module Alias: "pci:v00008086d00003A3Csv00001014sd00003A3Cbc0Csc03i20"
+  Driver Info #0:
+    Driver Status: ehci-hcd is active
+    Driver Activation Cmd: "modprobe ehci-hcd"
+  Driver Info #1:
+    Driver Status: ehci_pci is active
+    Driver Activation Cmd: "modprobe ehci_pci"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+41: PCI 1c.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: z8Q3.C9uSHrXeMd9
+  SysFS ID: /devices/pci0000:00/0000:00:1c.0
+  SysFS BusID: 0000:00:1c.0
+  Hardware Class: bridge
+  Model: "Intel 82801JI (ICH10 Family) PCI Express Root Port 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a40 "82801JI (ICH10 Family) PCI Express Root Port 1"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a40 
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d00003A40sv00001014sd00003A40bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+42: PCI 1c.4: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: QSNP.SP8vw1LnbY9
+  SysFS ID: /devices/pci0000:00/0000:00:1c.4
+  SysFS BusID: 0000:00:1c.4
+  Hardware Class: bridge
+  Model: "Intel 82801JI (ICH10 Family) PCI Express Root Port 5"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a48 "82801JI (ICH10 Family) PCI Express Root Port 5"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a48 
+  Driver: "pcieport"
+  Module Alias: "pci:v00008086d00003A48sv00001014sd00003A48bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+43: PCI 1d.0: 0c03 USB Controller (UHCI)
+  [Created at pci.328]
+  Unique ID: 1GTX.PTO4eXKVA61
+  SysFS ID: /devices/pci0000:00/0000:00:1d.0
+  SysFS BusID: 0000:00:1d.0
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB UHCI Controller #1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a34 "82801JI (ICH10 Family) USB UHCI Controller #1"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a34 
+  Driver: "uhci_hcd"
+  Driver Modules: "uhci_hcd"
+  I/O Ports: 0x2060-0x207f (rw)
+  Module Alias: "pci:v00008086d00003A34sv00001014sd00003A34bc0Csc03i00"
+  Driver Info #0:
+    Driver Status: uhci-hcd is active
+    Driver Activation Cmd: "modprobe uhci-hcd"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+44: PCI 1d.1: 0c03 USB Controller (UHCI)
+  [Created at pci.328]
+  Unique ID: vayM.RVwFDxQOa55
+  SysFS ID: /devices/pci0000:00/0000:00:1d.1
+  SysFS BusID: 0000:00:1d.1
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB UHCI Controller #2"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a35 "82801JI (ICH10 Family) USB UHCI Controller #2"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a35 
+  Driver: "uhci_hcd"
+  Driver Modules: "uhci_hcd"
+  I/O Ports: 0x2040-0x205f (rw)
+  Module Alias: "pci:v00008086d00003A35sv00001014sd00003A35bc0Csc03i00"
+  Driver Info #0:
+    Driver Status: uhci-hcd is active
+    Driver Activation Cmd: "modprobe uhci-hcd"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+45: PCI 1d.2: 0c03 USB Controller (UHCI)
+  [Created at pci.328]
+  Unique ID: mvRC.TXSRoKXH_49
+  SysFS ID: /devices/pci0000:00/0000:00:1d.2
+  SysFS BusID: 0000:00:1d.2
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB UHCI Controller #3"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a36 "82801JI (ICH10 Family) USB UHCI Controller #3"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a36 
+  Driver: "uhci_hcd"
+  Driver Modules: "uhci_hcd"
+  I/O Ports: 0x2020-0x203f (rw)
+  Module Alias: "pci:v00008086d00003A36sv00001014sd00003A36bc0Csc03i00"
+  Driver Info #0:
+    Driver Status: uhci-hcd is active
+    Driver Activation Cmd: "modprobe uhci-hcd"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+46: PCI 1d.7: 0c03 USB Controller (EHCI)
+  [Created at pci.328]
+  Unique ID: 5YuN.5gALPtHUPZ8
+  SysFS ID: /devices/pci0000:00/0000:00:1d.7
+  SysFS BusID: 0000:00:1d.7
+  Hardware Class: usb controller
+  Model: "Intel 82801JI (ICH10 Family) USB2 EHCI Controller #1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a3a "82801JI (ICH10 Family) USB2 EHCI Controller #1"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a3a 
+  Driver: "ehci-pci"
+  Driver Modules: "ehci_pci"
+  Module Alias: "pci:v00008086d00003A3Asv00001014sd00003A3Abc0Csc03i20"
+  Driver Info #0:
+    Driver Status: ehci-hcd is active
+    Driver Activation Cmd: "modprobe ehci-hcd"
+  Driver Info #1:
+    Driver Status: ehci_pci is active
+    Driver Activation Cmd: "modprobe ehci_pci"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+47: PCI 1e.0: 0604 PCI bridge (Subtractive decode)
+  [Created at pci.328]
+  Unique ID: 6NW+.jnU9NwOrZ7F
+  SysFS ID: /devices/pci0000:00/0000:00:1e.0
+  SysFS BusID: 0000:00:1e.0
+  Hardware Class: bridge
+  Model: "Intel 82801 PCI Bridge"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x244e "82801 PCI Bridge"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x244e 
+  Revision: 0x90
+  Module Alias: "pci:v00008086d0000244Esv00001014sd0000244Ebc06sc04i01"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+48: PCI 1f.0: 0601 ISA bridge
+  [Created at pci.328]
+  Unique ID: BUZT.PFI7m89wny9
+  SysFS ID: /devices/pci0000:00/0000:00:1f.0
+  SysFS BusID: 0000:00:1f.0
+  Hardware Class: bridge
+  Model: "Intel 82801JIB (ICH10) LPC Interface Controller"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a18 "82801JIB (ICH10) LPC Interface Controller"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a18 
+  Driver: "lpc_ich"
+  Driver Modules: "lpc_ich"
+  Module Alias: "pci:v00008086d00003A18sv00001014sd00003A18bc06sc01i00"
+  Driver Info #0:
+    Driver Status: lpc_ich is active
+    Driver Activation Cmd: "modprobe lpc_ich"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+49: PCI 1f.2: 0101 IDE interface
+  [Created at pci.328]
+  Unique ID: w7Y8.k_mOZzYrMR7
+  SysFS ID: /devices/pci0000:00/0000:00:1f.2
+  SysFS BusID: 0000:00:1f.2
+  Hardware Class: storage
+  Model: "Intel 82801JI (ICH10 Family) 4 port SATA IDE Controller #1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a20 "82801JI (ICH10 Family) 4 port SATA IDE Controller #1"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a20 
+  Driver: "ata_piix"
+  Driver Modules: "ata_piix"
+  I/O Ports: 0x1f0-0x1f7 (rw)
+  I/O Port: 0x3f6 (rw)
+  I/O Ports: 0x170-0x177 (rw)
+  I/O Port: 0x376 (rw)
+  I/O Ports: 0x20f0-0x20ff (rw)
+  I/O Ports: 0x20e0-0x20ef (rw)
+  Module Alias: "pci:v00008086d00003A20sv00001014sd00003A20bc01sc01i8a"
+  Driver Info #0:
+    Driver Status: ata_piix is active
+    Driver Activation Cmd: "modprobe ata_piix"
+  Driver Info #1:
+    Driver Status: ata_generic is active
+    Driver Activation Cmd: "modprobe ata_generic"
+  Driver Info #2:
+    Driver Status: pata_acpi is not active
+    Driver Activation Cmd: "modprobe pata_acpi"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+50: PCI 1f.3: 0c05 SMBus
+  [Created at pci.328]
+  Unique ID: nS1_.Jm8nqUx1zNF
+  SysFS ID: /devices/pci0000:00/0000:00:1f.3
+  SysFS BusID: 0000:00:1f.3
+  Hardware Class: unknown
+  Model: "Intel 82801JI (ICH10 Family) SMBus Controller"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a30 "82801JI (ICH10 Family) SMBus Controller"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a30 
+  Driver: "i801_smbus"
+  Driver Modules: "i2c_i801"
+  I/O Ports: 0x2000-0x201f (rw)
+  Module Alias: "pci:v00008086d00003A30sv00001014sd00003A30bc0Csc05i00"
+  Driver Info #0:
+    Driver Status: i2c_i801 is active
+    Driver Activation Cmd: "modprobe i2c_i801"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+51: PCI 1f.5: 0101 IDE interface
+  [Created at pci.328]
+  Unique ID: W60f.rE9el+4C4oB
+  SysFS ID: /devices/pci0000:00/0000:00:1f.5
+  SysFS BusID: 0000:00:1f.5
+  Hardware Class: storage
+  Model: "Intel 82801JI (ICH10 Family) 2 port SATA IDE Controller #2"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x3a26 "82801JI (ICH10 Family) 2 port SATA IDE Controller #2"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x3a26 
+  Driver: "ata_piix"
+  Driver Modules: "ata_piix"
+  I/O Ports: 0x2108-0x210f (rw)
+  I/O Ports: 0x2124-0x2127 (rw)
+  I/O Ports: 0x2100-0x2107 (rw)
+  I/O Ports: 0x2120-0x2123 (rw)
+  I/O Ports: 0x20d0-0x20df (rw)
+  I/O Ports: 0x20c0-0x20cf (rw)
+  Module Alias: "pci:v00008086d00003A26sv00001014sd00003A26bc01sc01i85"
+  Driver Info #0:
+    Driver Status: ata_piix is active
+    Driver Activation Cmd: "modprobe ata_piix"
+  Driver Info #1:
+    Driver Status: ata_generic is active
+    Driver Activation Cmd: "modprobe ata_generic"
+  Driver Info #2:
+    Driver Status: pata_acpi is not active
+    Driver Activation Cmd: "modprobe pata_acpi"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+52: PCI 100.0: 0104 RAID bus controller
+  [Created at pci.328]
+  Unique ID: VCu0.+9s+WtJlV80
+  Parent ID: z8Q3.C9uSHrXeMd9
+  SysFS ID: /devices/pci0000:00/0000:00:1c.0/0000:01:00.0
+  SysFS BusID: 0000:01:00.0
+  Hardware Class: storage
+  Model: "IBM ServeRAID M1015 SAS/SATA Controller"
+  Vendor: pci 0x1000 "LSI Logic / Symbios Logic"
+  Device: pci 0x0073 "MegaRAID SAS 2008 [Falcon]"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x03b1 "ServeRAID M1015 SAS/SATA Controller"
+  Revision: 0x03
+  Driver: "megaraid_sas"
+  Driver Modules: "megaraid_sas"
+  I/O Ports: 0x1000-0x1fff (rw)
+  Module Alias: "pci:v00001000d00000073sv00001014sd000003B1bc01sc04i00"
+  Driver Info #0:
+    Driver Status: megaraid_sas is active
+    Driver Activation Cmd: "modprobe megaraid_sas"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+  Attached to: #41 (PCI bridge)
+
+53: PCI 600.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.328]
+  Unique ID: vTuk.uPSDWcmPaZE
+  Parent ID: QSNP.SP8vw1LnbY9
+  SysFS ID: /devices/pci0000:00/0000:00:1c.4/0000:06:00.0
+  SysFS BusID: 0000:06:00.0
+  Hardware Class: bridge
+  Model: "Vitesse VSC452 [SuperBMC]"
+  Vendor: pci 0x101b "Vitesse Semiconductor"
+  Device: pci 0x0452 "VSC452 [SuperBMC]"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x0369 
+  Revision: 0x01
+  Module Alias: "pci:v0000101Bd00000452sv00001014sd00000369bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #42 (PCI bridge)
+
+54: PCI 700.0: 0300 VGA compatible controller (VGA)
+  [Created at pci.328]
+  Unique ID: aK5u.dr3Y3T2YISA
+  Parent ID: vTuk.uPSDWcmPaZE
+  SysFS ID: /devices/pci0000:00/0000:00:1c.4/0000:06:00.0/0000:07:00.0
+  SysFS BusID: 0000:07:00.0
+  Hardware Class: graphics card
+  Model: "Matrox MGA G200EV"
+  Vendor: pci 0x102b "Matrox Graphics, Inc."
+  Device: pci 0x0530 "MGA G200EV"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x0369 
+  Driver: "mgag200"
+  Driver Modules: "drm"
+  I/O Ports: 0x3c0-0x3df (rw)
+  Module Alias: "pci:v0000102Bd00000530sv00001014sd00000369bc03sc00i00"
+  Driver Info #0:
+    Driver Status: mgag200 is active
+    Driver Activation Cmd: "modprobe mgag200"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #53 (PCI bridge)
+
+55: PCI ff00.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: qZc7.QYngGuTyDy3
+  SysFS ID: /devices/pci0000:ff/0000:ff:00.0
+  SysFS BusID: 0000:ff:00.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QuickPath Architecture Generic Non-core Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2c70 "Xeon 5600 Series QuickPath Architecture Generic Non-core Registers"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002C70sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+56: PCI ff00.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: hu5z.qzMgpmsgtZF
+  SysFS ID: /devices/pci0000:ff/0000:ff:00.1
+  SysFS BusID: 0000:ff:00.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QuickPath Architecture System Address Decoder"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d81 "Xeon 5600 Series QuickPath Architecture System Address Decoder"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D81sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+57: PCI ff02.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: _ni3.ZBXv0KeFnJ5
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.0
+  SysFS BusID: 0000:ff:02.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QPI Link 0"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d90 "Xeon 5600 Series QPI Link 0"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D90sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+58: PCI ff02.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: r6Cv.4cTfVulyIi5
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.1
+  SysFS BusID: 0000:ff:02.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QPI Physical 0"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d91 "Xeon 5600 Series QPI Physical 0"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D91sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+59: PCI ff02.2: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: iRhk.b0QP_Stfq46
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.2
+  SysFS BusID: 0000:ff:02.2
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Mirror Port Link 0"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d92 "Xeon 5600 Series Mirror Port Link 0"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D92sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+60: PCI ff02.3: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: amAa.6RM9T1+MMT6
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.3
+  SysFS BusID: 0000:ff:02.3
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Mirror Port Link 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d93 "Xeon 5600 Series Mirror Port Link 1"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D93sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+61: PCI ff02.4: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: R5gP.drIvxb64ur6
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.4
+  SysFS BusID: 0000:ff:02.4
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QPI Link 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d94 "Xeon 5600 Series QPI Link 1"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D94sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+62: PCI ff02.5: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: JQ9F.8GFfQAEnPE7
+  SysFS ID: /devices/pci0000:ff/0000:ff:02.5
+  SysFS BusID: 0000:ff:02.5
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series QPI Physical 1"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d95 "Xeon 5600 Series QPI Physical 1"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D95sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+63: PCI ff03.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: 3vlX.hV4vspw6+y6
+  SysFS ID: /devices/pci0000:ff/0000:ff:03.0
+  SysFS BusID: 0000:ff:03.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d98 "Xeon 5600 Series Integrated Memory Controller Registers"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D98sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+64: PCI ff03.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: wDFN.Cw0fLO2qWL7
+  SysFS ID: /devices/pci0000:ff/0000:ff:03.1
+  SysFS BusID: 0000:ff:03.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Target Address Decoder"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d99 "Xeon 5600 Series Integrated Memory Controller Target Address Decoder"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D99sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+65: PCI ff03.2: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: nYkC.jKzOqy9X2k7
+  SysFS ID: /devices/pci0000:ff/0000:ff:03.2
+  SysFS BusID: 0000:ff:03.2
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller RAS Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d9a "Xeon 5600 Series Integrated Memory Controller RAS Registers"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D9Asv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+66: PCI ff03.4: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: WCjt.l9sun5Px5V8
+  SysFS ID: /devices/pci0000:ff/0000:ff:03.4
+  SysFS BusID: 0000:ff:03.4
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Test Registers"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2d9c "Xeon 5600 Series Integrated Memory Controller Test Registers"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002D9Csv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+67: PCI ff04.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: 80p+.ppduiNtlC1A
+  SysFS ID: /devices/pci0000:ff/0000:ff:04.0
+  SysFS BusID: 0000:ff:04.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 0 Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da0 "Xeon 5600 Series Integrated Memory Controller Channel 0 Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA0sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+68: PCI ff04.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: +KIr.KEaeBy_SkPA
+  SysFS ID: /devices/pci0000:ff/0000:ff:04.1
+  SysFS BusID: 0000:ff:04.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 0 Address"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da1 "Xeon 5600 Series Integrated Memory Controller Channel 0 Address"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA1sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+69: PCI ff04.2: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: sfng.reWOgW6AGoA
+  SysFS ID: /devices/pci0000:ff/0000:ff:04.2
+  SysFS BusID: 0000:ff:04.2
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 0 Rank"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da2 "Xeon 5600 Series Integrated Memory Controller Channel 0 Rank"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA2sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+70: PCI ff04.3: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: k_GW.M3T895EtnAB
+  SysFS ID: /devices/pci0000:ff/0000:ff:04.3
+  SysFS BusID: 0000:ff:04.3
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 0 Thermal Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da3 "Xeon 5600 Series Integrated Memory Controller Channel 0 Thermal Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA3sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+71: PCI ff05.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: C7sT.x7BuYxpOQ5D
+  SysFS ID: /devices/pci0000:ff/0000:ff:05.0
+  SysFS BusID: 0000:ff:05.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 1 Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da8 "Xeon 5600 Series Integrated Memory Controller Channel 1 Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA8sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+72: PCI ff05.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: 4SLJ.SY7e1Wx5yTD
+  SysFS ID: /devices/pci0000:ff/0000:ff:05.1
+  SysFS BusID: 0000:ff:05.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 1 Address"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2da9 "Xeon 5600 Series Integrated Memory Controller Channel 1 Address"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DA9sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+73: PCI ff05.2: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: xmq8.zy3OW43pTsD
+  SysFS ID: /devices/pci0000:ff/0000:ff:05.2
+  SysFS BusID: 0000:ff:05.2
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 1 Rank"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2daa "Xeon 5600 Series Integrated Memory Controller Channel 1 Rank"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DAAsv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+74: PCI ff05.3: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: p5K_.UN08+eAW+EE
+  SysFS ID: /devices/pci0000:ff/0000:ff:05.3
+  SysFS BusID: 0000:ff:05.3
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 1 Thermal Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2dab "Xeon 5600 Series Integrated Memory Controller Channel 1 Thermal Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DABsv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+75: PCI ff06.0: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: HEvx.3SktOVm1e90
+  SysFS ID: /devices/pci0000:ff/0000:ff:06.0
+  SysFS BusID: 0000:ff:06.0
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 2 Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2db0 "Xeon 5600 Series Integrated Memory Controller Channel 2 Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DB0sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+76: PCI ff06.1: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: 9ZOn.asgdt3uk9Y0
+  SysFS ID: /devices/pci0000:ff/0000:ff:06.1
+  SysFS BusID: 0000:ff:06.1
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 2 Address"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2db1 "Xeon 5600 Series Integrated Memory Controller Channel 2 Address"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DB1sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+77: PCI ff06.2: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: 0utc.5HdNMe+Rhw0
+  SysFS ID: /devices/pci0000:ff/0000:ff:06.2
+  SysFS BusID: 0000:ff:06.2
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 2 Rank"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2db2 "Xeon 5600 Series Integrated Memory Controller Channel 2 Rank"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DB2sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+78: PCI ff06.3: 0600 Host bridge
+  [Created at pci.328]
+  Unique ID: uCNS.chZ7rC79DJ1
+  SysFS ID: /devices/pci0000:ff/0000:ff:06.3
+  SysFS BusID: 0000:ff:06.3
+  Hardware Class: bridge
+  Model: "Intel Xeon 5600 Series Integrated Memory Controller Channel 2 Thermal Control"
+  Vendor: pci 0x8086 "Intel Corporation"
+  Device: pci 0x2db3 "Xeon 5600 Series Integrated Memory Controller Channel 2 Thermal Control"
+  SubVendor: pci 0x8086 "Intel Corporation"
+  SubDevice: pci 0x8086 
+  Revision: 0x02
+  Module Alias: "pci:v00008086d00002DB3sv00008086sd00008086bc06sc00i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+79: PCI b00.0: 0200 Ethernet controller
+  [Created at pci.328]
+  Unique ID: rBUF.5w4+Xu1Jzo9
+  Parent ID: vSkL.IhM5noxxQ+3
+  SysFS ID: /devices/pci0000:00/0000:00:01.0/0000:0b:00.0
+  SysFS BusID: 0000:0b:00.0
+  Hardware Class: network
+  Model: "Broadcom NetXtreme II BCM5709 Gigabit Ethernet"
+  Vendor: pci 0x14e4 "Broadcom"
+  Device: pci 0x1639 "NetXtreme II BCM5709 Gigabit Ethernet"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x03a9 
+  Revision: 0x20
+  Driver: "bnx2"
+  Driver Modules: "bnx2"
+  Device File: eth0
+  HW Address: 5c:f3:fc:4a:f3:68
+  Link detected: yes
+  Module Alias: "pci:v000014E4d00001639sv00001014sd000003A9bc02sc00i00"
+  Driver Info #0:
+    Driver Status: bnx2 is active
+    Driver Activation Cmd: "modprobe bnx2"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+  Attached to: #15 (PCI bridge)
+
+80: PCI b00.1: 0200 Ethernet controller
+  [Created at pci.328]
+  Unique ID: JNkJ.5w4+Xu1Jzo9
+  Parent ID: vSkL.IhM5noxxQ+3
+  SysFS ID: /devices/pci0000:00/0000:00:01.0/0000:0b:00.1
+  SysFS BusID: 0000:0b:00.1
+  Hardware Class: network
+  Model: "Broadcom NetXtreme II BCM5709 Gigabit Ethernet"
+  Vendor: pci 0x14e4 "Broadcom"
+  Device: pci 0x1639 "NetXtreme II BCM5709 Gigabit Ethernet"
+  SubVendor: pci 0x1014 "IBM"
+  SubDevice: pci 0x03a9 
+  Revision: 0x20
+  Driver: "bnx2"
+  Driver Modules: "bnx2"
+  Device File: eth1
+  HW Address: 5c:f3:fc:4a:f3:6a
+  Link detected: no
+  Module Alias: "pci:v000014E4d00001639sv00001014sd000003A9bc02sc00i00"
+  Driver Info #0:
+    Driver Status: bnx2 is active
+    Driver Activation Cmd: "modprobe bnx2"
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+  Attached to: #15 (PCI bridge)
+
+81: None 00.1: 0700 Serial controller (16550)
+  [Created at serial.74]
+  Unique ID: v9l_.3fyvFV+mbWD
+  Hardware Class: unknown
+  Model: "16550A"
+  Device: "16550A"
+  Device File: /dev/ttyS1
+  I/O Ports: 0x2f8-0x2ff (rw)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+82: SCSI 20.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: R7kM.M68lu+Cz+BE
+  Parent ID: VCu0.+9s+WtJlV80
+  SysFS ID: /class/block/sda
+  SysFS BusID: 0:2:0:0
+  SysFS Device Link: /devices/pci0000:00/0000:00:1c.0/0000:01:00.0/host0/target0:2:0/0:2:0:0
+  Hardware Class: disk
+  Model: "IBM ServeRAID M1015"
+  Vendor: "IBM"
+  Device: "ServeRAID M1015"
+  Revision: "2.12"
+  Serial ID: "00d1976f2035beb915d0fc3c03b00506"
+  Driver: "megaraid_sas", "sd"
+  Driver Modules: "megaraid_sas"
+  Device File: /dev/sda (/dev/sg0)
+  Device Files: /dev/sda, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1, /dev/disk/by-id/scsi-SIBM_ServeRAID_M1015_00d1976f2035beb915d0fc3c03b00506, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0
+  Device Number: block 8:0-8:15 (char 21:0)
+  BIOS id: 0x80
+  Geometry (Logical): CHS 17749/255/63
+  Size: 285149696 sectors a 512 bytes
+  Capacity: 135 GB (145996644352 bytes)
+  Geometry (BIOS Legacy): CHS 1023/255/63
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+  Attached to: #52 (RAID bus controller)
+
+83: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: bdUI.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda1
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda1
+  Device Files: /dev/sda1, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part1, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part1, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part1, /dev/disk/by-uuid/f8139730-8afb-4070-a446-470e4225a32d
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+84: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: 2pkM.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda2
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda2
+  Device Files: /dev/sda2, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part2, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part2, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part2, /dev/disk/by-uuid/9ec96774-64a7-4ace-bc57-f5c98212f344
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+85: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: W__Q.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda3
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda3
+  Device Files: /dev/sda3, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part3, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part3, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part3
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+86: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: QLVZ.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda5
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda5
+  Device Files: /dev/sda5, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part5, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part5, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part5, /dev/disk/by-uuid/5f01a780-1cd7-4df0-8f80-ebb9bac60182
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+87: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: tWld.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda6
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda6
+  Device Files: /dev/sda6, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part6, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part6, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part6, /dev/disk/by-uuid/10f8ee66-dc5b-4998-a9be-0f3a6ce69f50
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+88: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: Zzw6.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda7
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda7
+  Device Files: /dev/sda7, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part7, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part7, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part7, /dev/disk/by-uuid/f9f7f5ad-5756-4e92-b2c4-dc35223fad3c
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+89: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: 09BB.SE1wIdpsiiC
+  Parent ID: R7kM.M68lu+Cz+BE
+  SysFS ID: /class/block/sda/sda8
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sda8
+  Device Files: /dev/sda8, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be35206f97d1-part8, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be35206f97d1-part8, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:0:0-part8, /dev/disk/by-uuid/e7afcae2-158f-46a5-9125-5fd670ff294c
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #82 (Disk)
+
+90: SCSI 21.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: uI_Q.vzClrEZu49A
+  Parent ID: VCu0.+9s+WtJlV80
+  SysFS ID: /class/block/sdb
+  SysFS BusID: 0:2:1:0
+  SysFS Device Link: /devices/pci0000:00/0000:00:1c.0/0000:01:00.0/host0/target0:2:1/0:2:1:0
+  Hardware Class: disk
+  Model: "IBM ServeRAID M1015"
+  Vendor: "IBM"
+  Device: "ServeRAID M1015"
+  Revision: "2.12"
+  Serial ID: "00c913b4247cbeb915d0fc3c03b00506"
+  Driver: "megaraid_sas", "sd"
+  Driver Modules: "megaraid_sas"
+  Device File: /dev/sdb (/dev/sg1)
+  Device Files: /dev/sdb, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be7c24b413c9, /dev/disk/by-id/scsi-SIBM_ServeRAID_M1015_00c913b4247cbeb915d0fc3c03b00506, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be7c24b413c9, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:1:0
+  Device Number: block 8:16-8:31 (char 21:1)
+  BIOS id: 0x81
+  Geometry (Logical): CHS 17749/255/63
+  Size: 285149696 sectors a 512 bytes
+  Capacity: 135 GB (145996644352 bytes)
+  Geometry (BIOS Legacy): CHS 1023/255/63
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+  Attached to: #52 (RAID bus controller)
+
+91: None 00.0: 11300 Partition
+  [Created at block.414]
+  Unique ID: h4pj.SE1wIdpsiiC
+  Parent ID: uI_Q.vzClrEZu49A
+  SysFS ID: /class/block/sdb/sdb1
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/sdb1
+  Device Files: /dev/sdb1, /dev/disk/by-id/scsi-3600605b0033cfcd015b9be7c24b413c9-part1, /dev/disk/by-id/wwn-0x600605b0033cfcd015b9be7c24b413c9-part1, /dev/disk/by-path/pci-0000:01:00.0-scsi-0:2:1:0-part1, /dev/disk/by-uuid/547bb936-86d4-42c1-8145-5bdd3d13c2d6
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #90 (Disk)
+
+92: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: uIhY.v+N+B0xY+P6
+  Parent ID: 1GTX.PTO4eXKVA61
+  SysFS ID: /devices/pci0000:00/0000:00:1d.0/usb3/3-0:1.0
+  SysFS BusID: 3-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen uhci_hcd UHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen uhci_hcd"
+  Device: usb 0x0001 "UHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1d.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #43 (USB Controller)
+
+93: USB 00.0: 0291 USB Host-to-Host link
+  [Created at usb.122]
+  Unique ID: mZxt.W3Bp+6TvMh5
+  Parent ID: uIhY.v+N+B0xY+P6
+  SysFS ID: /devices/pci0000:00/0000:00:1d.0/usb3/3-2/3-2:1.0
+  SysFS BusID: 3-2:1.0
+  Hardware Class: network
+  Model: "IBM RNDIS/CDC ETHER"
+  Hotplug: USB
+  Vendor: usb 0x04b3 "IBM Corp."
+  Device: usb 0x4010 "RNDIS/CDC ETHER"
+  Revision: "2.15"
+  Driver: "cdc_ether"
+  Driver Modules: "cdc_ether"
+  Device File: usb0
+  Speed: 12 Mbps
+  HW Address: 5e:f3:fc:50:f3:6b
+  Link detected: no
+  Module Alias: "usb:v04B3p4010d0215dc02dsc00dp00ic02isc06ip00in00"
+  Driver Info #0:
+    Driver Status: cdc_ether is active
+    Driver Activation Cmd: "modprobe cdc_ether"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #92 (Hub)
+
+94: USB 00.1: 0000 Unclassified device
+  [Created at usb.122]
+  Unique ID: DlBy.jT91dawWm0F
+  Parent ID: uIhY.v+N+B0xY+P6
+  SysFS ID: /devices/pci0000:00/0000:00:1d.0/usb3/3-2/3-2:1.1
+  SysFS BusID: 3-2:1.1
+  Hardware Class: unknown
+  Model: "IBM RNDIS/CDC ETHER"
+  Hotplug: USB
+  Vendor: usb 0x04b3 "IBM Corp."
+  Device: usb 0x4010 "RNDIS/CDC ETHER"
+  Revision: "2.15"
+  Driver: "cdc_ether"
+  Driver Modules: "cdc_ether"
+  Speed: 12 Mbps
+  Module Alias: "usb:v04B3p4010d0215dc02dsc00dp00ic0Aisc00ip00in01"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #92 (Hub)
+
+95: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: zPk0.gkSaZmjGyhD
+  Parent ID: vayM.RVwFDxQOa55
+  SysFS ID: /devices/pci0000:00/0000:00:1d.1/usb4/4-0:1.0
+  SysFS BusID: 4-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen uhci_hcd UHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen uhci_hcd"
+  Device: usb 0x0001 "UHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1d.1"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #44 (USB Controller)
+
+96: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: 2XnU.RTX9xWW_uz4
+  Parent ID: mvRC.TXSRoKXH_49
+  SysFS ID: /devices/pci0000:00/0000:00:1d.2/usb5/5-0:1.0
+  SysFS BusID: 5-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen uhci_hcd UHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen uhci_hcd"
+  Device: usb 0x0001 "UHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1d.2"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #45 (USB Controller)
+
+97: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: 7eqy.cO89g+iefn1
+  Parent ID: sClz.9kEiZgUGDY0
+  SysFS ID: /devices/pci0000:00/0000:00:1a.7/usb6/6-0:1.0
+  SysFS BusID: 6-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen ehci_hcd EHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen ehci_hcd"
+  Device: usb 0x0002 "EHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1a.7"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #40 (USB Controller)
+
+98: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: BSFT.9T1GDCLyFd9
+  Parent ID: 5YuN.5gALPtHUPZ8
+  SysFS ID: /devices/pci0000:00/0000:00:1d.7/usb7/7-0:1.0
+  SysFS BusID: 7-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen ehci_hcd EHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen ehci_hcd"
+  Device: usb 0x0002 "EHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1d.7"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #46 (USB Controller)
+
+99: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: k4bc.MxUuepIFPaE
+  Parent ID: pwJ7.VZ_cNcV2gl7
+  SysFS ID: /devices/pci0000:00/0000:00:1a.0/usb1/1-0:1.0
+  SysFS BusID: 1-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen uhci_hcd UHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen uhci_hcd"
+  Device: usb 0x0001 "UHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1a.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #38 (USB Controller)
+
+100: USB 00.0: 10800 Keyboard
+  [Created at usb.122]
+  Unique ID: ADDn.23HUixB0lAB
+  Parent ID: k4bc.MxUuepIFPaE
+  SysFS ID: /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1:1.0
+  SysFS BusID: 1-1:1.0
+  Hardware Class: keyboard
+  Model: "ActionStar Keyboard"
+  Hotplug: USB
+  Vendor: usb 0x2101 "ActionStar"
+  Device: usb 0x020f 
+  Revision: "0.01"
+  Driver: "usbhid"
+  Driver Modules: "usbhid"
+  Device File: /dev/input/event0
+  Device Files: /dev/input/event0, /dev/input/by-id/usb-2101_020f-event-kbd, /dev/input/by-path/pci-0000:00:1a.0-usb-0:1:1.0-event-kbd
+  Device Number: char 13:64
+  Speed: 1.5 Mbps
+  Module Alias: "usb:v2101p020Fd0001dc00dsc00dp00ic03isc01ip01in00"
+  Driver Info #0:
+    XkbRules: xfree86
+    XkbModel: pc104
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #99 (Hub)
+
+101: USB 00.1: 10503 USB Mouse
+  [Created at usb.122]
+  Unique ID: dOTr.X1ijkJmp0u8
+  Parent ID: k4bc.MxUuepIFPaE
+  SysFS ID: /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1:1.1
+  SysFS BusID: 1-1:1.1
+  Hardware Class: mouse
+  Model: "ActionStar USB Mouse"
+  Hotplug: USB
+  Vendor: usb 0x2101 "ActionStar"
+  Device: usb 0x020f 
+  Revision: "0.01"
+  Compatible to: int 0x0210 0x0015
+  Driver: "usbhid"
+  Driver Modules: "usbhid"
+  Device File: /dev/input/mice (/dev/input/mouse0)
+  Device Files: /dev/input/mice, /dev/input/mouse0, /dev/input/event1, /dev/input/by-id/usb-2101_020f-if01-event-mouse, /dev/input/by-path/pci-0000:00:1a.0-usb-0:1:1.1-event-mouse, /dev/input/by-id/usb-2101_020f-if01-mouse, /dev/input/by-path/pci-0000:00:1a.0-usb-0:1:1.1-mouse
+  Device Number: char 13:63 (char 13:32)
+  Speed: 1.5 Mbps
+  Module Alias: "usb:v2101p020Fd0001dc00dsc00dp00ic03isc01ip02in01"
+  Driver Info #0:
+    Buttons: 5
+    Wheels: 1
+    XFree86 Protocol: explorerps/2
+    GPM Protocol: exps2
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #99 (Hub)
+
+102: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: pBe4.7gZT0a5zLs5
+  Parent ID: gFpy.XbWoy+bx3lB
+  SysFS ID: /devices/pci0000:00/0000:00:1a.1/usb2/2-0:1.0
+  SysFS BusID: 2-0:1.0
+  Hardware Class: hub
+  Model: "Linux 3.12.22-2-xen uhci_hcd UHCI Host Controller"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux 3.12.22-2-xen uhci_hcd"
+  Device: usb 0x0001 "UHCI Host Controller"
+  Revision: "3.12"
+  Serial ID: "0000:00:1a.1"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0312dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #39 (USB Controller)
+
+103: None 00.0: 10103 CPU
+  [Created at cpu.452]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.44.2 "Intel(R) Xeon(R) CPU           E5606  @ 2.13GHz"
+  Features: fpu,de,tsc,msr,pae,mce,cx8,apic,sep,mtrr,mca,cmov,pat,clflush,acpi,mmx,fxsr,sse,sse2,ss,ht,syscall,nx,lm,constant_tsc,rep_good,nopl,aperfmperf,pni,pclmulqdq,est,ssse3,cx16,sse4_1,sse4_2,popcnt,aes,hypervisor,lahf_lm,arat,epb,dtherm
+  Cache: 8192 kb
+  Units/Processor: 32
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+104: None 01.0: 10103 CPU
+  [Created at cpu.452]
+  Unique ID: wkFv.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.44.2 "Intel(R) Xeon(R) CPU           E5606  @ 2.13GHz"
+  Features: fpu,de,tsc,msr,pae,mce,cx8,apic,sep,mtrr,mca,cmov,pat,clflush,acpi,mmx,fxsr,sse,sse2,ss,ht,syscall,nx,lm,constant_tsc,rep_good,nopl,aperfmperf,pni,pclmulqdq,est,ssse3,cx16,sse4_1,sse4_2,popcnt,aes,hypervisor,lahf_lm,arat,epb,dtherm
+  Cache: 8192 kb
+  Units/Processor: 32
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+105: None 02.0: 10103 CPU
+  [Created at cpu.452]
+  Unique ID: +rIN.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.44.2 "Intel(R) Xeon(R) CPU           E5606  @ 2.13GHz"
+  Features: fpu,de,tsc,msr,pae,mce,cx8,apic,sep,mtrr,mca,cmov,pat,clflush,acpi,mmx,fxsr,sse,sse2,ss,ht,syscall,nx,lm,constant_tsc,rep_good,nopl,aperfmperf,pni,pclmulqdq,est,ssse3,cx16,sse4_1,sse4_2,popcnt,aes,hypervisor,lahf_lm,arat,epb,dtherm
+  Cache: 8192 kb
+  Units/Processor: 32
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+106: None 03.0: 10103 CPU
+  [Created at cpu.452]
+  Unique ID: 4zLr.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.44.2 "Intel(R) Xeon(R) CPU           E5606  @ 2.13GHz"
+  Features: fpu,de,tsc,msr,pae,mce,cx8,apic,sep,mtrr,mca,cmov,pat,clflush,acpi,mmx,fxsr,sse,sse2,ss,ht,syscall,nx,lm,constant_tsc,rep_good,nopl,aperfmperf,pni,pclmulqdq,est,ssse3,cx16,sse4_1,sse4_2,popcnt,aes,hypervisor,lahf_lm,arat,epb,dtherm
+  Cache: 8192 kb
+  Units/Processor: 32
+  Config Status: cfg=no, avail=yes, need=no, active=unknown
+
+107: None 00.0: 10700 Loopback
+  [Created at net.125]
+  Unique ID: ZsBS.GQNx7L4uPNA
+  SysFS ID: /class/net/lo
+  Hardware Class: network interface
+  Model: "Loopback network interface"
+  Device File: lo
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+108: None 00.0: 10701 Ethernet
+  [Created at net.125]
+  Unique ID: GGbY.ndpeucax6V1
+  SysFS ID: /class/net/br0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bridge"
+  Device File: br0
+  HW Address: 5c:f3:fc:4a:f3:68
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+109: None 01.0: 10701 Ethernet
+  [Created at net.125]
+  Unique ID: L2Ua.ndpeucax6V1
+  Parent ID: JNkJ.5w4+Xu1Jzo9
+  SysFS ID: /class/net/eth1
+  SysFS Device Link: /devices/pci0000:00/0000:00:01.0/0000:0b:00.1
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bnx2"
+  Driver Modules: "bnx2"
+  Device File: eth1
+  HW Address: 5c:f3:fc:4a:f3:6a
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #80 (Ethernet controller)
+
+110: None 00.0: 10701 Ethernet
+  [Created at net.125]
+  Unique ID: usDW.ndpeucax6V1
+  Parent ID: rBUF.5w4+Xu1Jzo9
+  SysFS ID: /class/net/eth0
+  SysFS Device Link: /devices/pci0000:00/0000:00:01.0/0000:0b:00.0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bnx2"
+  Driver Modules: "bnx2"
+  Device File: eth0
+  HW Address: 5c:f3:fc:4a:f3:68
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #79 (Ethernet controller)
+
+111: None 00.0: 1070c USB-Link
+  [Created at net.125]
+  Unique ID: IhCv.SyfSGg7YspF
+  Parent ID: mZxt.W3Bp+6TvMh5
+  SysFS ID: /class/net/usb0
+  SysFS Device Link: /devices/pci0000:00/0000:00:1d.0/usb3/3-2/3-2:1.0
+  Hardware Class: network interface
+  Model: "USB-Link network interface"
+  Driver: "cdc_ether"
+  Driver Modules: "cdc_ether"
+  Device File: usb0
+  HW Address: 5e:f3:fc:50:f3:6b
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #93 (USB Host-to-Host link)

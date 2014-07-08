@@ -1,0 +1,16 @@
+WAIT
+0
+save_directory
+/var/log/qa/ctcs2/tiobench-bench-2014-06-21-04-52-07
+LINE
+3
+interrupt_flag
+/var/log/qa/ctcs2/tiobench-bench-2014-06-21-04-52-07/interrupt-flag
+verbose
+0
+SYNC_LOGGING
+0
+LOOP
+0
+runin_directory
+./runin
