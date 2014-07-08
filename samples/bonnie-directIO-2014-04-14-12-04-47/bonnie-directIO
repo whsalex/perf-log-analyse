@@ -1,0 +1,132 @@
+--
+Needing 100 MB, having 137143 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 100MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.1963', size: 104857600, volumes: 1
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  46509 kB/s  62.0 %CPU
+Rewriting...                   done:  41003 kB/s   6.7 %CPU
+Writing intelligently...       done:  72785 kB/s   8.0 %CPU
+Reading with getc()...         done:  19963 kB/s  39.1 %CPU
+Reading intelligently...       done: 130035 kB/s   4.6 %CPU
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>100 * 1</TD><TD>46509</TD><TD>62.0</TD><TD>72785</TD><TD> 8.0</TD><TD>41003</TD><TD> 6.7</TD><TD>19963</TD><TD>39.1</TD><TD>130035</TD><TD> 4.6</TD><TD> 512.8</TD><TD> 4.6</TD></TR>
+Mon Apr 14 12:05:10 CST 2014: bonnie-directIO success: on 1/1 after 23s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 256 MB, having 137136 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 256MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.1981', size: 268435456, volumes: 1
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  49646 kB/s  65.8 %CPU
+Rewriting...                   done:  41716 kB/s   6.7 %CPU
+Writing intelligently...       done:  73042 kB/s   8.5 %CPU
+Reading with getc()...         done:  20628 kB/s  38.7 %CPU
+Reading intelligently...       done: 130252 kB/s   4.4 %CPU
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>256 * 1</TD><TD>49646</TD><TD>65.8</TD><TD>73042</TD><TD> 8.5</TD><TD>41716</TD><TD> 6.7</TD><TD>20628</TD><TD>38.7</TD><TD>130252</TD><TD> 4.4</TD><TD> 424.7</TD><TD> 4.3</TD></TR>
+Mon Apr 14 12:05:53 CST 2014: bonnie-directIO success: on 1/1 after 1m6s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 512 MB, having 136887 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 512MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.1998', size: 536870912, volumes: 1
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  53767 kB/s  69.9 %CPU
+Rewriting...                   done:  39560 kB/s   6.5 %CPU
+Writing intelligently...       done:  73328 kB/s   8.2 %CPU
+Reading with getc()...         done:  19786 kB/s  38.5 %CPU
+Reading intelligently...       done: 130729 kB/s   4.5 %CPU
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>512 * 1</TD><TD>53767</TD><TD>69.9</TD><TD>73328</TD><TD> 8.2</TD><TD>39560</TD><TD> 6.5</TD><TD>19786</TD><TD>38.5</TD><TD>130729</TD><TD> 4.5</TD><TD> 408.3</TD><TD> 4.3</TD></TR>
+Mon Apr 14 12:07:07 CST 2014: bonnie-directIO success: on 1/1 after 2m20s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 1024 MB, having 136631 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 1024MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.2018', size: 1073741824, volumes: 1
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  49953 kB/s  65.9 %CPU
+Rewriting...                   done:  38718 kB/s   6.4 %CPU
+Writing intelligently...       done:  72834 kB/s   8.3 %CPU
+Reading with getc()...         done:  19721 kB/s  38.3 %CPU
+Reading intelligently...       done: 130634 kB/s   4.4 %CPU
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>1024 * 1</TD><TD>49953</TD><TD>65.9</TD><TD>72834</TD><TD> 8.3</TD><TD>38718</TD><TD> 6.4</TD><TD>19721</TD><TD>38.3</TD><TD>130634</TD><TD> 4.4</TD><TD> 335.4</TD><TD> 3.8</TD></TR>
+Mon Apr 14 12:09:26 CST 2014: bonnie-directIO success: on 1/1 after 4m39s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 2048 MB, having 136118 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 1024MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.2032', size: 1073741824, volumes: 2
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  60222 kB/s  75.9 %CPU
+Rewriting...                   done:  37203 kB/s   6.2 %CPU
+Writing intelligently...       done:  73214 kB/s   8.4 %CPU
+Reading with getc()...         done:  20140 kB/s  38.5 %CPU
+Reading intelligently...       done: 130760 kB/s   4.4 %CPU
+Seek numbers calculated on first volume only
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>1024 * 2</TD><TD>60222</TD><TD>75.9</TD><TD>73214</TD><TD> 8.4</TD><TD>37203</TD><TD> 6.2</TD><TD>20140</TD><TD>38.5</TD><TD>130760</TD><TD> 4.4</TD><TD> 377.7</TD><TD> 4.2</TD></TR>
+Mon Apr 14 12:13:40 CST 2014: bonnie-directIO success: on 1/1 after 8m53s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 4096 MB, having 136099 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 1024MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.2056', size: 1073741824, volumes: 4
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  70206 kB/s  85.2 %CPU
+Rewriting...                   done:  39481 kB/s   6.4 %CPU
+Writing intelligently...       done:  73381 kB/s   8.3 %CPU
+Reading with getc()...         done:  20342 kB/s  38.4 %CPU
+Reading intelligently...       done: 130875 kB/s   4.5 %CPU
+Seek numbers calculated on first volume only
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>1024 * 4</TD><TD>70206</TD><TD>85.2</TD><TD>73381</TD><TD> 8.3</TD><TD>39481</TD><TD> 6.4</TD><TD>20342</TD><TD>38.4</TD><TD>130875</TD><TD> 4.5</TD><TD> 381.3</TD><TD> 4.5</TD></TR>
+Mon Apr 14 12:21:35 CST 2014: bonnie-directIO success: on 1/1 after 16m48s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 8192 MB, having 133046 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 1024MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.2087', size: 1073741824, volumes: 8
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  76656 kB/s  92.3 %CPU
+Rewriting...                   done:  38566 kB/s   6.4 %CPU
+Writing intelligently...       done:  73237 kB/s   8.3 %CPU
+Reading with getc()...         done:  20087 kB/s  38.6 %CPU
+Reading intelligently...       done: 130857 kB/s   4.5 %CPU
+Seek numbers calculated on first volume only
+Seeker 2...Seeker 1...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>1024 * 8</TD><TD>76656</TD><TD>92.3</TD><TD>73237</TD><TD> 8.3</TD><TD>38566</TD><TD> 6.4</TD><TD>20087</TD><TD>38.6</TD><TD>130857</TD><TD> 4.5</TD><TD> 378.8</TD><TD> 3.9</TD></TR>
+Mon Apr 14 12:37:12 CST 2014: bonnie-directIO success: on 1/1 after 32m25s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
+--
+Needing 16384 MB, having 133130 MB
+Bonnie: Warning: You have 15953MiB RAM, but you test with only 1024MiB datasize!
+Bonnie:          This might yield unrealistically good results,
+Bonnie:          for reading and seeking and writing for char I/O (putc/getc).
+Bonnie 1.4: File '/abuild/Bonnie.2158', size: 1073741824, volumes: 16
+Using O_DIRECT for block based I/O
+Writing with putc()...         done:  78725 kB/s  95.1 %CPU
+Rewriting...                   done:  38827 kB/s   6.3 %CPU
+Writing intelligently...       done:  73070 kB/s   8.4 %CPU
+Reading with getc()...         done:  20036 kB/s  38.6 %CPU
+Reading intelligently...       done: 129719 kB/s   4.5 %CPU
+Seek numbers calculated on first volume only
+Seeker 1...Seeker 2...Seeker 3...start 'em...done...done...done...
+<TR><TD>apac2-ph026</TD><TD>1024 * 16</TD><TD>78725</TD><TD>95.1</TD><TD>73070</TD><TD> 8.4</TD><TD>38827</TD><TD> 6.3</TD><TD>20036</TD><TD>38.6</TD><TD>129719</TD><TD> 4.5</TD><TD> 361.1</TD><TD> 3.9</TD></TR>
+Mon Apr 14 13:08:09 CST 2014: bonnie-directIO success: on 1/1 after 1h3m22s
+0 fail 1 succeed 1 count 0 internal_error 0 skipped
